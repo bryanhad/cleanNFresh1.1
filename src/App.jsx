@@ -7,7 +7,7 @@ import PageNotFound from './pages/PageNotFound'
 const App = () => {
   return (
     <Routes>
-      <Route path='/' element={<RootLayout/>}>
+      <Route path='/cleanNFresh1.1' element={<RootLayout/>}>
         <Route index element={<Home/>}/>
         <Route path='*' element={<PageNotFound/>}/>
       </Route>
