@@ -6,9 +6,10 @@ import bestSellerIcon from '../../assets/icons/best-seller.png'
 import { Link } from 'react-router-dom'
 import OutboundIcon from '@mui/icons-material/Outbound'
 
-import vacuumPic from '../../assets/photos/vacuumGood.png'
+import vacuumPic from '../../assets/photos/vacuumOnly.png'
 import generalPic from '../../assets/photos/generalCleaningGood.png'
 import carPic from '../../assets/photos/carCleaningGood.png'
+import MyButton from '../../components/MyButton'
 
 const ServicesBanner = () => {
   // const iconStyle = 'text-primary-dark group-hover:text-white text-3xl'
@@ -36,12 +37,8 @@ const ServicesBanner = () => {
         />
       </div>
       <div className="max-w-[1240px] mx-auto flex justify-center translate-y-[-35px]">
-        <Link to="services">
-          <button className="px-16 py-4 duration-200 bg-moss-light hover:bg-moss-lightest font-semibold rounded-full text-white hover:scale-[1.05]">
-            <span className="mr-4">Lihat Semua Jasa Kami</span>
-            <OutboundIcon />
-          </button>
-        </Link>
+        <MyButton to='layanan' size='button-big'>Lihat Semua Jasa Kami</MyButton>
+
       </div>
     </div>
   )
@@ -54,12 +51,12 @@ const ServiceCard = ({ icon, title, desc, path, image }) => {
     >
       {/* bestseller Icon */}
       <img
-        className="h-[45px] absolute top-0 left-0 translate-x-[-30%] translate-y-[-30%]"
+        className="h-[45px] absolute top-0 left-0 translate-x-[-30%] translate-y-[-30%] "
         src={bestSellerIcon}
         alt=""
       />
 
-      <div className="col-span-2 flex items-center rounded-l-xl max-h-[200px] overflow-hidden">
+      <div className="col-span-2 rounded-l-xl max-h-[200px] overflow-hidden">
         <img className="h-full w-full object-cover " src={image} alt="" />
       </div>
 

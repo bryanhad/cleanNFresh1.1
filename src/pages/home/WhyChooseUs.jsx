@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import OutboundIcon from '@mui/icons-material/Outbound'
 import TitleCenterToLeft from '../../components/TitleCenterToLeft'
+import MyButton from '../../components/MyButton'
 
 const WhyChooseUs = () => {
   return (
@@ -19,11 +20,7 @@ const WhyChooseUs = () => {
             assumenda porro fuga consequatur ipsam nostrum maxime sed perspiciatis
             incidunt maiores quia Lorem ipsum dolor sit amet.
             </p>
-            <Link to="about">
-            <button className="px-6 py-4 bg-moss-light text-white rounded-full my-4 ">Tentang Kami
-            <OutboundIcon className='ml-2'/>
-            </button>
-            </Link>
+            <MyButton to='tentang' size='button-big'>Tentang Kami</MyButton>
         </div>
       </div>
     </div>

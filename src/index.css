@@ -2,40 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: 'Poppins', sans-serif;
+@layer components {
+  .button {
+    @apply duration-200 bg-moss-light hover:bg-moss-lightest font-semibold rounded-full text-white hover:scale-[1.05];
+  }
+
+  .button-big {
+    @apply px-16 py-4;
+  }
+
+  .button-small {
+    @apply px-5 py-2 text-sm md:text-base relative;
+  }
+
+  .whatsapp-button {
+    @apply py-2 px-7 bg-whatsapp rounded-xl break-words text-white text-[14px];
+  }
+
+  .instagram-button {
+    @apply py-2 px-8 instagram rounded-xl text-white break-all;
+  }
+
+  .absolute-xy-center {
+    @apply absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%];
+  }
 }
 
-.active{
-    color: white;
-    background-color: #7fd3f7;
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.active {
+  color: white;
+  background-color: #7fd3f7;
 }
 
 .skewed {
-    height: 100%;
-    background-color: #3bb2e6;
+  height: 100%;
+  background-color: #3bb2e6;
 }
 
-.skewed::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: -165px;
-    width: 350px;
-    background-color: #39a9da;
-    transform: skewX(-20deg);
+.skewed::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -165px;
+  width: 350px;
+  background-color: #39a9da;
+  transform: skewX(-20deg);
 }
 
-.skewed::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: -240px;
-    width: 200px;
-    background-color: #3298c4a9;
-    transform: skewX(-20deg);
+.skewed::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -240px;
+  width: 200px;
+  background-color: #3298c4a9;
+  transform: skewX(-20deg);
 }
 
 .slick-prev:before,
@@ -43,11 +69,16 @@
   color: rgb(177, 177, 177);
 }
 
-.slick-track{
-    display: flex;
-    align-items: center;
+.slick-track {
+  display: flex;
+  align-items: center;
 }
 
-.instagram{
-    background: linear-gradient(52deg, rgba(249,206,52,1) 0%, rgba(238,42,123,1) 49%, rgba(98,40,215,1) 100%);
+.instagram {
+  background: linear-gradient(
+    52deg,
+    rgba(249, 206, 52, 1) 0%,
+    rgba(238, 42, 123, 1) 49%,
+    rgba(98, 40, 215, 1) 100%
+  );
 }

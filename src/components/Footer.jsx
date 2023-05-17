@@ -18,13 +18,15 @@ const Footer = () => {
     <>
     
 
-    <footer className="w-full bg-[#2c87ad] mt-auto overflow-hidden">
+    <footer className="w-full bg-[#2c87ad] mt-auto">
       <div className="max-w-[1240px] text-white md:mx-auto px-4 h-full py-12 relative grid md:grid-cols-2">
-        <ArrowUpwardIcon
-          onClick={scrollUp}
-          className="z-[1] hover:scale-[1.1] cursor-pointer duration-200 text-amber-300 bg-white p-1 rounded-full absolute top-0 translate-y-[-50%] right-[10%]"
-          size={50}
-        />
+        <div className='absolute z-[2] top-0 translate-y-[-50%] right-[10%] group cursor-pointer'>
+          <ArrowUpwardIcon
+          style={{fontSize:'40px'}}
+            onClick={scrollUp}
+            className="group-hover:scale-[1.1] duration-200 text-[#2c87ad]  bg-white shadow-xl p-1 rounded-full"
+          />
+        </div>
 
         <div className=" md:mr-4 ">
           <h5 className="font-bold text-3xl">Clean'n Fresh</h5>
@@ -38,7 +40,7 @@ const Footer = () => {
 
         <div className="w-full flex max-md:flex-wrap justify-center sm:justify-evenly">
           <div className="my-2 mx-6 md:mx-2">
-            <h5 className="text-lime-400 font-semibold text-xl max-md:text-center xl:text-center mb-3">Links</h5>
+            <h5 className="text-[#185169] font-semibold text-xl max-md:text-center xl:text-center mb-3">Links</h5>
             <div className="flex flex-col max-md:items-center xl:grid xl:grid-cols-2 gap-2">
               <Link to="/">Home</Link>
               <Link to="tentang">Tentang Kami</Link>
@@ -48,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="my-2 mx-6 md:mx-2">
-            <h5 className="text-lime-400 font-semibold text-center text-xl mb-3">Penasaran?</h5>
+            <h5 className="text-[#185169] font-semibold text-center text-xl mb-3">Penasaran?</h5>
             <div className="flex flex-col gap-4">
               <span className='flex items-center justify-center max-md:flex-wrap gap-2'>
                 <BsTelephoneFill className='text-[25px]'/>

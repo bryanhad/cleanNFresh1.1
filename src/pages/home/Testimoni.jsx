@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import customers from '../../data/Reviews'
+import customers from '../../data/ReviewsData'
 import {BiHappyAlt} from 'react-icons/bi'
 import {RiDoubleQuotesR} from 'react-icons/ri'
 import TitleCenter from '../../components/TitleCenter'
@@ -60,9 +60,9 @@ const Testimoni = () => {
 
 const Review = ({ name, review, stars, color }) => {
   return (
-    <div className='bg-slate-100 p-4 rounded-xl mx-2 relative'>
+    <div className='bg-moss-lightest/30 p-4 rounded-xl mx-2 relative'>
 
-      <RiDoubleQuotesR className='text-[100px] absolute  right-[50%] translate-x-[50%] text-slate-200'/>
+      <RiDoubleQuotesR className='text-[100px] absolute  right-[50%] translate-x-[50%] text-moss-lightest/30'/>
 
       <span className='relative z-[3]'>
         <div className='flex items-center'>

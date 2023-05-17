@@ -20,7 +20,9 @@ const Navbar = () => {
     <>
       <nav className="w-full h-[80px] px-4 border-b-2 bg-white sticky top-0 z-[10]">
         <main className="max-w-[1240px] mx-auto h-full flex items-center justify-between">
-          <img className="max-h-[50px]" src={LOGO} alt="" />
+          <Link to='/cleanNFresh1.1'>
+            <img className="max-h-[50px]" src={LOGO} alt="" />
+          </Link>
 
           <div className="h-[50px] w-[50px] relative md:hidden">
             <div
@@ -35,7 +37,7 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? 'fixed top-0 right-0  w-[60%] h-full bg-white ease-in-out duration-500 z-[9]'
+                ? 'fixed top-0 right-0  w-[70%] h-full bg-[#ffffffee] ease-in-out duration-500 z-[9]'
                 : 'fixed top-0 right-[-100%] w-[60%] h-full bg-white opacity-0 ease-in-out duration-500 z-[9]'
             }
           >

@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import cleaning1 from '../../assets/carousel/cleaning1good.png'
 import cleaning2 from '../../assets/carousel/cleaning2good.png'
-import cleaning3 from '../../assets/carousel/cleaning3good-new2.png'
+import cleaning3 from '../../assets/carousel/cleaning3good.png'
 import BubbleChartIcon from '@mui/icons-material/BubbleChart'
 import OutboundIcon from '@mui/icons-material/Outbound'
+import MyButton from '../../components/MyButton'
 
 const HomeCarousel = () => {
   const slides = [cleaning1, cleaning2, cleaning3]
@@ -38,16 +39,11 @@ const HomeCarousel = () => {
               dolor tenetur numquam, recusandae debitis illum corrupti laborum?
               Voluptatem aliquam.
             </p>
-            <Link className='rounded-full group duration-300 hover:scale-[1.05]' to="services">
-              <button className="py-4 px-12 bg-moss-light group-hover:bg-moss-lightest group-hover:text-moss-white duration-300 text-white flex gap-4 font-semibold rounded-full ">
-                <p>Jasa Kami</p>
-                <OutboundIcon />
-              </button>
-            </Link>
+            <MyButton to='layanan' size='button-big'>Jasa Kami</MyButton>
           </div>
 
           <div className="hidden sm:block absolute top-[50%] translate-y-[-40%] left-[-10%]">
-            {/* <BubbleChartIcon style={{fontSize:'500px'}} className='  text-primary-light/40'/> */}
+            <BubbleChartIcon style={{fontSize:'600px'}} className='  text-primary-light/20'/>
           </div>
         </div>
       </main>
