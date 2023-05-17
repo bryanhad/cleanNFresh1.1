@@ -9,7 +9,7 @@ import arrowBot from '../../assets/background/arrowNegative.svg'
 
 const HomeSecondBanner = () => {
   return (
-    <div className="w-full px-6 pt-12 pb-[calc(3rem+100px)] bg-primary-darker relative">
+    <div className="w-full px-6 pt-12 pb-[calc(5rem+100px)] bg-primary-darker relative overflow-hidden ">
 
       <div className="max-w-[1240px] mx-auto ">
         <TitleCenter textColor="text-white" lineColor="bg-white">
@@ -39,7 +39,9 @@ const HomeSecondBanner = () => {
           />
         </div>
       </div>
-      <img className='w-full absolute bottom-0 left-0 h-[100px]' src={arrowBot} alt="" />
+      <div>
+        <img className='min-w-[1600px] w-full absolute bottom-0 left-[50%] translate-x-[-50%] h-[100px]' src={arrowBot} alt="" />
+      </div>
     </div>
   )
 }

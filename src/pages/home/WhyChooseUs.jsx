@@ -6,7 +6,7 @@ import MyButton from '../../components/MyButton'
 
 const WhyChooseUs = () => {
   return (
-    <div className="w-full min-h-[90vh] lg:min-h-[65vh] flex items-center px-6">
+    <div className="w-full min-h-[90vh] lg:min-h-[70vh] flex items-center px-6 py-12">
       <div className="h-full max-w-[1240px] mx-auto flex flex-col lg:flex-row gap-4 lg:gap-10 items-center  overflow-hidden">
         <img
           className="w-full max-lg:max-w-[600px] lg:max-w-[60%]"
@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
         />
         <div className='max-lg:flex max-lg:flex-col max-lg:items-center'>
           <TitleCenterToLeft desc='About Us'>Kenapa Pilih Kami?</TitleCenterToLeft>
-            <p className='text-slate-500 max-lg:text-center'>
+            <p className='text-slate-500 max-lg:text-center mb-4'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
             assumenda porro fuga consequatur ipsam nostrum maxime sed perspiciatis
             incidunt maiores quia Lorem ipsum dolor sit amet.

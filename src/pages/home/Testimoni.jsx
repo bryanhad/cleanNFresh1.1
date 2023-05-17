@@ -38,7 +38,7 @@ const Testimoni = () => {
   };
 
   return (
-    <div className='w-full px-6 pt-8 pb-16'>
+    <div className='w-full px-6 pb-[6rem]'>
       <div className='max-w-[1240px] mx-auto '>
         <TitleCenter desc='Reviews' textColor='text-primary-darker' lineColor='bg-primary-darker'>Komentar dari Customer</TitleCenter>
         <div className='mt-4 px-4'>

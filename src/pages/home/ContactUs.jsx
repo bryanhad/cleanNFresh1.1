@@ -6,7 +6,7 @@ import Sosmed from '../../components/Sosmed'
 
 const ContactUs = () => {
   return (
-    <div className="w-full px-6 py-12 bg-slate-100/60">
+    <div className="w-full px-6 py-[6rem] bg-slate-100/60">
       <div className="max-w-[1240px] mx-auto grid lg:grid-cols-2 gap-10">
         <div>
           <span className="flex flex-col items-center lg:items-start">

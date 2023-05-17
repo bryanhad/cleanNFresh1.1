@@ -33,7 +33,7 @@ const HomeBanner = () => {
             />
           }
           title="KAMI MELAYANI"
-          desc="JADETABEK"
+          desc="JABODETABEK"
         />
       </div>
     </Banner>
@@ -42,13 +42,13 @@ const HomeBanner = () => {
 
 const Item = ({ icon, title, desc }) => {
   return (
-    <div className="flex items-center">
+    <div className="flex flex-col sm:flex-row items-center">
       {icon}
-      <div className="ml-8 sm:flex lg:block sm:items-center">
-        <h1 className="font-bold text-[12px] sm:max-lg:text-[14px] tracking-wider ">
+      <div className="sm:ml-8 sm:flex lg:block sm:items-center">
+        <h1 className="font-bold text-[12px] sm:max-lg:text-[14px] tracking-wider max-sm:text-center">
           {title}
         </h1>
-        <p className="font-bold text-lg lg:text-3xl text-amber-200 sm:max-lg:ml-4">
+        <p className="font-bold text-lg lg:text-3xl text-amber-200 sm:max-lg:ml-4 max-sm:text-center">
           {desc}
         </p>
       </div>
