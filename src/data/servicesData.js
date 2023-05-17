@@ -1,5 +1,5 @@
 import vacuumOnly_1 from '../assets/photos/vacuumOnlyGood.png'
-import vacuumCuci from '../assets/photos/vacuumcuciGood.png'
+import vacuumCuci from '../assets/photos/vacuumcuciGood-v2.png'
 import fogging from '../assets/photos/foggingGood.png'
 import general_1 from '../assets/photos/generalCleaning2.jpg'
 import general_2 from '../assets/photos/generalCleaning1.jpg'
