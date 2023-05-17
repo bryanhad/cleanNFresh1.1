@@ -37,7 +37,7 @@ const HomeCarousel = () => {
             <p className="mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
               dolor tenetur numquam, recusandae debitis illum corrupti laborum?
-              Voluptatem aliquam.
+              Voluptatem aliquam. lorem12
             </p>
             <MyButton to='layanan' size='button-big'>Jasa Kami</MyButton>
           </div>

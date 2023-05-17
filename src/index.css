@@ -4,7 +4,7 @@
 
 @layer components {
   .button {
-    @apply duration-200 bg-moss-light hover:bg-moss-lightest font-semibold rounded-full text-white hover:scale-[1.05];
+    @apply duration-200 bg-moss-light hover:bg-moss-lightest font-semibold rounded-full text-white hover:scale-[1.05] flex items-center gap-2;
   }
 
   .button-big {
@@ -12,7 +12,7 @@
   }
 
   .button-small {
-    @apply px-5 py-2 text-sm md:text-base relative;
+    @apply px-5 py-2 sm:px-6 lg:px-8 text-sm md:text-base relative;
   }
 
   .whatsapp-button {

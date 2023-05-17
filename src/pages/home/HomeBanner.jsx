@@ -1,16 +1,18 @@
 import React from 'react'
 import Banner from '../../components/Banner'
-import CallIcon from '@mui/icons-material/Call'
-import QueryBuilderIcon from '@mui/icons-material/QueryBuilder'
-import LocationOnIcon from '@mui/icons-material/LocationOn'
+import {IoCall} from 'react-icons/io5'
+import {AiOutlineClockCircle} from 'react-icons/ai'
+import {MdLocationOn} from 'react-icons/md'
 
 const HomeBanner = () => {
+  const iconStyle = 'text-[20px] md:text-[24px] lg:text-[30px] max-sm:mb-2'
+
   return (
     <Banner color="bg-primary-darker">
       <div className="flex flex-col items-center py-4 gap-4 lg:flex-row lg:px-8 lg:justify-between">
         <Item
           icon={
-            <CallIcon className="text-[20px] md:text-[24px] lg:text-[30px]" />
+            <IoCall className={iconStyle} />
           }
           title="INGIN LANGSUNG PESAN?"
           desc="0815 1105 7728"
@@ -18,7 +20,7 @@ const HomeBanner = () => {
         <Line />
         <Item
           icon={
-            <QueryBuilderIcon className="text-[20px] sm:max-lg:text-[24px] lg:text-[30px]" />
+            <AiOutlineClockCircle className={iconStyle} />
           }
           title="KAMI BEROPERASI SENIN-SABTU"
           desc="08:00 - 17:00"
@@ -27,8 +29,8 @@ const HomeBanner = () => {
 
         <Item
           icon={
-            <LocationOnIcon
-              className="text-[20px] sm:max-lg:text-[24px] lg:text-[30px]"
+            <MdLocationOn
+              className={iconStyle} 
               color="white"
             />
           }

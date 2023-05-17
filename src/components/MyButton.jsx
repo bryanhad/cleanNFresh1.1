@@ -6,7 +6,7 @@ const MyButton = ({children, size, to, hiddenAtMobile}) => {
     <Link to={to}>
       <button className={`button ${size}`}>
         {children}
-        <OutboundIcon className={hiddenAtMobile && 'absolute-xy-center opacity-0'}/>
+        <OutboundIcon className={hiddenAtMobile && 'max-sm:absolute-xy-center opacity-0 sm:opacity-[100%]'}/>
       </button>
     </Link>
   )
