@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import OutboundIcon from '@mui/icons-material/Outbound'
+import TitleCenterToLeft from '../../components/TitleCenterToLeft'
 
 const WhyChooseUs = () => {
   return (
@@ -12,9 +13,7 @@ const WhyChooseUs = () => {
           alt=""
         />
         <div className='max-lg:flex max-lg:flex-col max-lg:items-center'>
-            <h5 className='text-primary-darker text-sm font-200'>Tentang Kami</h5>
-            <h1 className='font-semibold text-primary-darker text-4xl mb-3 max-lg:text-center'>Kenapa Pilih Kami?</h1>
-            <div className='w-[40%] h-[3px] bg-primary-dark mb-4'></div>
+          <TitleCenterToLeft desc='About Us'>Kenapa Pilih Kami?</TitleCenterToLeft>
             <p className='text-slate-500 max-lg:text-center'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
             assumenda porro fuga consequatur ipsam nostrum maxime sed perspiciatis

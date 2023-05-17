@@ -3,6 +3,8 @@ import { BsWhatsapp } from 'react-icons/bs'
 import { BsInstagram } from 'react-icons/bs'
 import Instagram from '../../assets/icons/instagram.png'
 import { Link } from 'react-router-dom'
+import jabodetabek from '../../assets/photos/jabodetabek.png'
+import TitleCenterToLeft from '../../components/TitleCenterToLeft'
 
 const ContactUs = () => {
   return (
@@ -10,10 +12,7 @@ const ContactUs = () => {
       <div className="max-w-[1240px] mx-auto grid lg:grid-cols-2 gap-10">
         <div>
             <span className='flex flex-col items-center lg:items-start'>
-              <h1 className="font-semibold text-primary-darker text-4xl mb-3 text-center">
-                Hubungi Kami
-              </h1>
-              <div className="w-[35%] h-[3px] bg-primary-dark mb-4"></div>
+              <TitleCenterToLeft desc='Contact'>Hubungi Kami</TitleCenterToLeft>
               <p className="text-center lg:text-left">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex aperiam
                 facere totam corporis, iste necessitatibus nam magnam deserunt
@@ -42,10 +41,10 @@ const ContactUs = () => {
               </div>
             </span>
         </div>
-        <div className='relative border-4  border-slate-200'>
-          <h5 className='absolute top-0 left-0 bg-primary-medium text-white p-2 font-semibold'>Area Kami</h5>
-          <h1 className='absolute font-bold w-full text-center top-[50%] translate-y-[-50%] left-0 bg-primary-medium text-white text-xl sm:text-4xl'>JABODETABEK</h1>
-          <img className='w-full max-h-[300px] object-cover' src="https://thumbs.dreamstime.com/z/vector-map-indonesian-megacity-urban-area-jabodetabek-138707330.jpg" alt="" />
+        <div className='relative border-4 rounde-xl  border-slate-300'>
+          <h5 className='absolute z-[1] top-0 left-0 bg-slate-300 text-white p-2 font-semibold'>Area Kami</h5>
+          <h1 className='absolute z-[1] font-bold w-full text-center top-[50%] translate-y-[-50%] left-0 bg-primary-medium text-white text-xl sm:text-4xl'>JABODETABEK</h1>
+          <img className='w-[70%] mx-auto max-h-[300px] object-cover brightness-[115%]' src={jabodetabek} alt="" />
         </div>
         {/* <div>
                 <h1 className="font-semibold text-primary-darker text-4xl mb-3 max-lg:text-center">

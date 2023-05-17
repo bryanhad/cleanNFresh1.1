@@ -40,10 +40,16 @@ const Navbar = () => {
             }
           >
             <main className="mt-[80px] pr-4 flex flex-col items-end gap-4">
-              <Link className={burgerNavLinkStyle} to="/">
+              <Link className={burgerNavLinkStyle} to="/cleanNFresh1.1">
                 <h5>Home</h5>
                 <div className={burgerNavLinkDivStyle}>
                   <WindowIcon />
+                </div>
+              </Link>
+              <Link className={burgerNavLinkStyle} to="layanan">
+                <h5>Layanan Kami</h5>
+                <div className={burgerNavLinkDivStyle}>
+                  <CleaningServicesIcon />
                 </div>
               </Link>
               <Link className={burgerNavLinkStyle} to="tentang">
@@ -52,14 +58,8 @@ const Navbar = () => {
                   <InfoIcon />
                 </div>
               </Link>
-              <Link className={burgerNavLinkStyle} to="jasa">
-                <h5>Jasa kami</h5>
-                <div className={burgerNavLinkDivStyle}>
-                  <CleaningServicesIcon />
-                </div>
-              </Link>
-              <Link className={burgerNavLinkStyle} to="pertanyaan">
-                <h5>Pertanyaan</h5>
+              <Link className={burgerNavLinkStyle} to="bantuan">
+                <h5>Bantuan</h5>
                 <div className={burgerNavLinkDivStyle}>
                   <QuizIcon />
                 </div>
@@ -73,20 +73,20 @@ const Navbar = () => {
             </main>
           </div>
 
-          <div className="hidden md:flex gap-4  ">
-            <NavLink className={navButtonStyle} to="/">
+          <div className="hidden md:flex gap-4">
+            <NavLink end className={navButtonStyle}  to="/cleanNFresh1.1">
               Home
+            </NavLink>
+            <NavLink className={navButtonStyle} to="layanan">
+              Layanan Kami
             </NavLink>
             <NavLink className={navButtonStyle} to="tentang">
               Tentang Kami
             </NavLink>
-            <NavLink className={navButtonStyle} to="jasa">
-              Services
-            </NavLink>
-            <NavLink className={navButtonStyle} to="pertanyaan">
+            <NavLink className={navButtonStyle} to="bantuan">
               Pertanyaan
             </NavLink>
-            <NavLink className={navButtonStyle} to="/kontak">
+            <NavLink className={navButtonStyle} to="kontak">
               Kontak
             </NavLink>
           </div>

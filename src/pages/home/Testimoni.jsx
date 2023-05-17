@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import customers from '../../data/Reviews'
 import {BiHappyAlt} from 'react-icons/bi'
 import {RiDoubleQuotesR} from 'react-icons/ri'
+import TitleCenter from '../../components/TitleCenter'
 
 const Testimoni = () => {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -39,11 +40,7 @@ const Testimoni = () => {
   return (
     <div className='w-full px-6 pt-8 pb-16'>
       <div className='max-w-[1240px] mx-auto '>
-        <div className='flex flex-col items-center'>
-          <h5 className='text-primary-darker text-sm font-200'>Testimoni</h5>
-          <h1 className='font-semibold text-primary-darker text-4xl mb-3 text-center'>Komentar Dari Customer</h1>
-          <div className='w-[40%] h-[3px] bg-primary-dark mb-4'></div>
-        </div>
+        <TitleCenter desc='Reviews' textColor='text-primary-darker' lineColor='bg-primary-darker'>Komentar dari Customer</TitleCenter>
         <div className='mt-4 px-4'>
           <Slider {...settings}>
             {customers.map((customer, index) => (

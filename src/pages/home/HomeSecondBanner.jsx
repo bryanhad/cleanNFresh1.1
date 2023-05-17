@@ -3,12 +3,13 @@ import {BiHappyAlt} from 'react-icons/bi'
 import {MdCleaningServices} from 'react-icons/md'
 import {TbFaceMask} from 'react-icons/tb'
 import {BsStars} from 'react-icons/bs'
+import TitleCenter from '../../components/TitleCenter'
 
 const HomeSecondBanner = () => {
   return (
     <div className='w-full px-6 py-10 bg-primary-darker'>
         <div className='max-w-[1240px] mx-auto '>
-            <h1 className='font-semibold text-white text-3xl sm:text-4xl text-center mb-8'>Kami Memberikan Yang Terbaik</h1>
+            <TitleCenter textColor='text-white' lineColor='bg-white'>Kami Memberikan Yang Terbaik</TitleCenter>
 
             <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
                 <Item icon={<BiHappyAlt/>} title='Ramah dan Terlatih' desc='Seluruh pegawai telah melewati training yang menekankan profesionalisme dan keramahan'/>
