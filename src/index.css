@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.active{
+    color: white;
+    background-color: #7fd3f7;
+}
+
+.skewed {
+    height: 100%;
+    background-color: #3bb2e6;
+}
+
+.skewed::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -165px;
+    width: 350px;
+    background-color: #39a9da;
+    transform: skewX(-20deg);
+}
+
+.skewed::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -240px;
+    width: 200px;
+    background-color: #3298c4a9;
+    transform: skewX(-20deg);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(177, 177, 177);
+}
+
+.slick-track{
+    display: flex;
+    align-items: center;
+}
+
+.instagram{
+    background: linear-gradient(52deg, rgba(249,206,52,1) 0%, rgba(238,42,123,1) 49%, rgba(98,40,215,1) 100%);
+}

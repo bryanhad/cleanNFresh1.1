@@ -1,17 +1,16 @@
-import { Outlet } from "react-router-dom"
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
-
+import { Outlet } from 'react-router-dom'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const RootLayout = () => {
   return (
-    <>
-    <Navbar/>
-    <main className="min-h-[calc(100vh-80px)]">
-        <Outlet/>
-    </main>
-    <Footer/>
-    </>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="w-full">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
   )
 }
 
