@@ -1,14 +1,12 @@
-import React, { useState } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import customers from '../../data/ReviewsData'
 import {BiHappyAlt} from 'react-icons/bi'
 import {RiDoubleQuotesR} from 'react-icons/ri'
-import TitleCenter from '../../components/TitleCenter'
+import TitleSection from '../../components/TitleSection'
 
 const Testimoni = () => {
-  const [activeIndex, setActiveIndex] = useState(0)
 
   const settings = {
     dots: true,
@@ -40,7 +38,7 @@ const Testimoni = () => {
   return (
     <div className='w-full px-6 pb-[5rem]'>
       <div className='max-w-[1240px] mx-auto '>
-        <TitleCenter desc='Reviews' textColor='text-primary-darker' lineColor='bg-primary-darker'>Komentar dari Customer</TitleCenter>
+        <TitleSection direction='center-to-center' color='primary' desc='Reviews'>Komentar dari Customer</TitleSection>
         <div className='mt-4 px-4'>
           <Slider {...settings}>
             {customers.map((customer, index) => (

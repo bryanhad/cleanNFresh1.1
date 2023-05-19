@@ -1,11 +1,6 @@
 import PropTypes from 'prop-types'
 
 const Banner = ({ children, color }) => {
-  Banner.propTypes = {
-    children: PropTypes.any,
-    color: PropTypes.string,
-  }  
-  
   return (
     <div
       className={`w-full min-h-[120px] px-6 flex items-center justify-center text-white ${color}`}
@@ -17,4 +12,8 @@ const Banner = ({ children, color }) => {
   )
 }
 
+Banner.propTypes = {
+  children: PropTypes.any,
+  color: PropTypes.string,
+}
 export default Banner

@@ -1,8 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import OutboundIcon from '@mui/icons-material/Outbound'
-import TitleCenterToLeft from '../../components/TitleCenterToLeft'
 import MyButton from '../../components/MyButton'
+import TitleSection from '../../components/TitleSection'
 
 const WhyChooseUs = () => {
   return (
@@ -13,14 +11,20 @@ const WhyChooseUs = () => {
           src="https://www.viccleaning.com.au/wp-content/uploads/2023/01/cleaning-crew-victoria.jpg"
           alt=""
         />
-        <div className='max-lg:flex max-lg:flex-col max-lg:items-center'>
-          <TitleCenterToLeft desc='About Us'>Kenapa Pilih Kami?</TitleCenterToLeft>
-            <p className='text-slate-500 max-lg:text-center mb-4'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+        <div className="max-lg:flex max-lg:flex-col max-lg:items-center">
+          <TitleSection
+            direction="center-to-left"
+            color="primary"
+            desc="About Us"
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
             assumenda porro fuga consequatur ipsam nostrum maxime sed perspiciatis
-            incidunt maiores quia Lorem ipsum dolor sit amet.
-            </p>
-            <MyButton to='tentang' size='button-big'>Tentang Kami</MyButton>
+            incidunt maiores quia Lorem ipsum dolor sit amet."
+          >
+            Kenapa Pilih Kami?
+          </TitleSection>
+          <MyButton to="tentang" size="button-big">
+            Tentang Kami
+          </MyButton>
         </div>
       </div>
     </div>

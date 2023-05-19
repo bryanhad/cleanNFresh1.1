@@ -11,7 +11,6 @@ const JasaMainPage = () => {
       <TopPageBackground
         direction="right"
         background={handBackground}
-        color="sm:bg-[#98dfeb]"
       />
       <TopPageTitle
         direction="right"

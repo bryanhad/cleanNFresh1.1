@@ -20,7 +20,7 @@ const Navbar = () => {
     <>
       <nav className="w-full h-[80px] px-4 border-b-2 bg-white sticky top-0 z-[10]">
         <main className="max-w-[1240px] mx-auto h-full flex items-center justify-between">
-          <Link to='/cleanNFresh1.1'>
+          <Link to="/cleanNFresh1.1">
             <img className="max-h-[50px]" src={LOGO} alt="" />
           </Link>
 
@@ -76,7 +76,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex gap-4">
-            <NavLink end className={navButtonStyle}  to="/cleanNFresh1.1">
+            <NavLink end className={navButtonStyle} to="/cleanNFresh1.1">
               Home
             </NavLink>
             <NavLink className={navButtonStyle} to="layanan">

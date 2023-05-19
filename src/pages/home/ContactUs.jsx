@@ -1,5 +1,5 @@
 import React from 'react'
-import jabodetabek from '../../assets/photos/jabodetabek.png'
+import mapImg from '../../assets/photos/jabodetabek.png'
 import TitleCenterToLeft from '../../components/TitleCenterToLeft'
 import Sosmed from '../../components/Sosmed'
 
@@ -34,16 +34,16 @@ const ContactUs = () => {
             </Sosmed>
           </span>
         </div>
-        <div className="relative border-4 rounde-xl  border-slate-300">
+        <div className="relative flex items-center justify-center">
           <h5 className="absolute z-[1] top-0 left-0 bg-slate-300 text-white p-2 font-semibold">
             Area Kami
           </h5>
           <h1 className="absolute z-[1] font-bold w-full text-center top-[50%] translate-y-[-50%] left-0 bg-primary-medium text-white text-xl sm:text-4xl">
-            JABODETABEK
+            JADETABEK & Medan
           </h1>
           <img
-            className="w-[70%] mx-auto max-h-[300px] object-cover brightness-[115%]"
-            src={jabodetabek}
+            className="w-[70%] max-h-[300px] object-contain brightness-[115%]"
+            src={mapImg}
             alt=""
           />
         </div>

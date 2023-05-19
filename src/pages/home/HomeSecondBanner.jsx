@@ -3,17 +3,15 @@ import { BiHappyAlt } from 'react-icons/bi'
 import { MdCleaningServices } from 'react-icons/md'
 import { TbFaceMask } from 'react-icons/tb'
 import { BsStars } from 'react-icons/bs'
-import TitleCenter from '../../components/TitleCenter'
 import arrowBot from '../../assets/background/arrowNegative.svg'
+import TitleSection from '../../components/TitleSection'
 
 const HomeSecondBanner = () => {
   return (
-    <div className="w-full px-6 pt-12 pb-[calc(4rem+100px)] bg-primary-darker relative overflow-hidden ">
+    <div className="w-full px-6 pt-12 pb-[calc(4rem+100px)] bg-primary-darker relative">
 
       <div className="max-w-[1240px] mx-auto ">
-        <TitleCenter textColor="text-white" lineColor="bg-white">
-          Kami Memberikan Yang Terbaik
-        </TitleCenter>
+        <TitleSection direction='center-to-center'>Kami Memberikan Yang Terbaik</TitleSection>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <Item
@@ -39,7 +37,7 @@ const HomeSecondBanner = () => {
         </div>
       </div>
       <div>
-        <img className='min-w-[1600px] w-full absolute bottom-0 left-[50%] translate-x-[-50%] h-[100px]' src={arrowBot} alt="" />
+        <img className='min-w-[1600px] w-full absolute bottom-[-1px] left-[50%] translate-x-[-50%] h-[100px]' src={arrowBot} alt="" />
       </div>
     </div>
   )
