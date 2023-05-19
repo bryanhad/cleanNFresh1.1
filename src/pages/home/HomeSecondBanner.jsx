@@ -4,12 +4,11 @@ import { MdCleaningServices } from 'react-icons/md'
 import { TbFaceMask } from 'react-icons/tb'
 import { BsStars } from 'react-icons/bs'
 import TitleCenter from '../../components/TitleCenter'
-import bookBottomSVG from '../../assets/background/book.svg'
 import arrowBot from '../../assets/background/arrowNegative.svg'
 
 const HomeSecondBanner = () => {
   return (
-    <div className="w-full px-6 pt-12 pb-[calc(5rem+100px)] bg-primary-darker relative overflow-hidden ">
+    <div className="w-full px-6 pt-12 pb-[calc(4rem+100px)] bg-primary-darker relative overflow-hidden ">
 
       <div className="max-w-[1240px] mx-auto ">
         <TitleCenter textColor="text-white" lineColor="bg-white">

@@ -15,7 +15,7 @@ const JasaCard = ({ children, image, desc, to, thumbnail }) => {
   }
 
   return (
-    <div className="shadow-md flex flex-col bg-white">
+    <div className="shadow-xl flex flex-col bg-white relative z-[8] md:max-w-[80%] md:mx-auto">
       <div className='max-h-[200px] sm:max-h-[300px] overflow-hidden cursor-pointer'>
         <img
           className="w-full h-full object-cover hover:scale-[1.2] duration-300"

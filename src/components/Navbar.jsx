@@ -86,7 +86,7 @@ const Navbar = () => {
               Tentang Kami
             </NavLink>
             <NavLink className={navButtonStyle} to="bantuan">
-              Pertanyaan
+              Bantuan
             </NavLink>
             <NavLink className={navButtonStyle} to="kontak">
               Kontak

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import jabodetabek from '../../assets/photos/jabodetabek.png'
 import TitleCenterToLeft from '../../components/TitleCenterToLeft'
 import Sosmed from '../../components/Sosmed'
@@ -53,12 +52,5 @@ const ContactUs = () => {
   )
 }
 
-const WhatsAppIcon = () => (
-  <BsWhatsapp className="text-whatsapp text-[60px] p-[5px]" />
-)
-
-const InstagramIcon = () => (
-  <img className="max-w-[60px] p-[5px]" src={Instagram} alt="" />
-)
 
 export default ContactUs

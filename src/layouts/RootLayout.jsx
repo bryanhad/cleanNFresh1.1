@@ -6,7 +6,7 @@ const RootLayout = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="w-full">
+      <main className="w-full overflow-hidden">
         <Outlet />
       </main>
       <Footer />

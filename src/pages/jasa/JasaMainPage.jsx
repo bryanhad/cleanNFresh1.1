@@ -1,22 +1,30 @@
-import EmployeeBackground from '../../components/EmployeeBackground'
-import JasaCard from '../../components/JasaCard'
-import services from '../../data/servicesData.js'
+import handBackground from '../../assets/carousel/handCool.png'
+import TopPageTitle from '../../components/TopPageTitle'
+import bgCircleScatter from '../../assets/background/circleScatter.svg'
+import JasaShowCase from './JasaShowCase'
+import PatternBackground from '../../components/PatternBackground'
+import TopPageBackground from '../../components/TopPageBackground'
 
 const JasaMainPage = () => {
   return (
-    <div className='w-full py-8 px-6 relative overflow-hidden'>
-        <EmployeeBackground/>
-      <div className='max-w-[1240px] mx-auto'>
-        <div className='pt-4 pb-10  rounded-md'>
-          <h1 className='text-4xl md:text-5xl xl:text-6xl font-semibold text-white text-center break-words'>LAYANAN KAMI</h1>
-        </div>
-        <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 xl:mt-5'>
-          {
-            services.map(service => (
-              <JasaCard key={service.title} image={service.image} desc={service.desc}>{service.title}</JasaCard>
-            ))
-          }
-        </div>
+    <div className="relative">
+      <TopPageBackground
+        direction="right"
+        background={handBackground}
+        color="sm:bg-[#98dfeb]"
+      />
+      <TopPageTitle
+        direction="right"
+        desc="Apakah Anda lelah melakukan pekerjaan rumah tangga? Apakah Anda merasa stres seperti tidak punya cukup waktu dalam sehari? Apakah rumah atau tempat kerja Anda terasa berantakan dan kotor? Jangan khawatir."
+      >
+        <p className="text-[14px] font-[300] py-2 text-green-200">
+          Our Services
+        </p>
+        LAYANAN KAMI
+      </TopPageTitle>
+      <div className="w-full px-6 relative pb-12">
+        <PatternBackground svg={bgCircleScatter} />
+        <JasaShowCase />
       </div>
     </div>
   )

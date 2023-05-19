@@ -40,17 +40,17 @@ const Footer = () => {
 
         <div className="w-full flex max-md:flex-wrap justify-center sm:justify-evenly">
           <div className="my-2 mx-6 md:mx-2">
-            <h5 className="text-[#185169] font-semibold text-xl max-md:text-center xl:text-center mb-3">Links</h5>
+            <h5 className="text-[#ffffff] font-semibold text-xl max-md:text-center xl:text-center mb-3">Links</h5>
             <div className="flex flex-col max-md:items-center xl:grid xl:grid-cols-2 gap-2">
               <Link to="/">Home</Link>
               <Link to="tentang">Tentang Kami</Link>
-              <Link to="jasa">Services</Link>
-              <Link to="pertanyaan">Pertanyaan</Link>
+              <Link to="layanan">Layanan</Link>
+              <Link to="bantuan">Bantuan</Link>
               <Link to="/kontak">Kontak</Link>
             </div>
           </div>
           <div className="my-2 mx-6 md:mx-2">
-            <h5 className="text-[#185169] font-semibold text-center text-xl mb-3">Penasaran?</h5>
+            <h5 className="text-[#ffffff] font-semibold text-center text-xl mb-3">Penasaran?</h5>
             <div className="flex flex-col gap-4">
               <span className='flex items-center justify-center max-md:flex-wrap gap-2'>
                 <BsTelephoneFill className='text-[25px]'/>

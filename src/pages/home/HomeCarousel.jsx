@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import cleaning1 from '../../assets/carousel/cleaning1good.png'
 import cleaning2 from '../../assets/carousel/cleaning2good.png'
 import cleaning3 from '../../assets/carousel/cleaning3good.png'
 import BubbleChartIcon from '@mui/icons-material/BubbleChart'
-import OutboundIcon from '@mui/icons-material/Outbound'
 import MyButton from '../../components/MyButton'
 
 const HomeCarousel = () => {
@@ -29,8 +27,8 @@ const HomeCarousel = () => {
   }
 
   return (
-    <div className="w-full h-[85vh] sm:h-[75vh] relative bg-primary-medium overflow-hidden">
-      <main className="max-w-[1240px] relative top-[40%] translate-y-[-50%] mx-auto z-[2] ">
+    <div className="w-full h-[80vh] sm:h-[65vh] relative bg-primary-medium overflow-hidden">
+      <main className="max-w-[1240px] relative top-[45%] translate-y-[-50%] mx-auto z-[4] ">
         <div className="text-white relative px-4 w-[85%] md:w-[70%] xl:w-[60%] ">
           <div className="relative z-[4] flex flex-col items-start">
             <h1 className="text-6xl font-semibold mb-2">CLEAN THE UNSEEN</h1>
@@ -48,15 +46,14 @@ const HomeCarousel = () => {
         </div>
       </main>
 
-      <div className="absolute z-[1] top-0 left-[-140%] sm:left-0 duration-500 sm:w-[40%] md:w-[30%] lg:w-[50%] xl:w-[58%] skewed"></div>
+      <div className="skewed skewed-left"></div>
+
+      <div className='w-full h-full duration-300 sm:hidden bg-[#3caedf] opacity-[40%] absolute top-0 z-[3] '></div>
 
       <div
         style={{ backgroundImage: `url(${slides[currentIndex]})` }}
-        className="absolute top-0 right-0  bg-no-repeat bg-cover h-[100%] w-[100%] sm:w-[60%] md:w-[70%] lg:w-[50%] xl:w-[42%] duration-500  bg-center brightness-[70%] sm:brightness-[90%] md:brightness-100"
+        className="absolute top-0 right-0  bg-no-repeat bg-cover h-[100%] w-[100%] sm:w-[60%] md:w-[70%] lg:w-[50%] xl:w-[42%] duration-500  bg-center brightness-[50%] sm:brightness-[90%] md:brightness-100"
       ></div>
-
-      {/* <div className='absolute right-0 rounded-full border-8 border-primary-light'> */}
-      {/* </div> */}
     </div>
   )
 }
