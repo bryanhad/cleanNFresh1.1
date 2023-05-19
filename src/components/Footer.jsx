@@ -46,7 +46,7 @@ const Footer = () => {
               <Link to="tentang">Tentang Kami</Link>
               <Link to="layanan">Layanan</Link>
               <Link to="bantuan">Bantuan</Link>
-              <Link to="/kontak">Kontak</Link>
+              <Link to="kontak">Kontak</Link>
             </div>
           </div>
           <div className="my-2 mx-6 md:mx-2">
