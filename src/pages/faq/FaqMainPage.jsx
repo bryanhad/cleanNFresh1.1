@@ -1,8 +1,6 @@
-import React from 'react'
 import TopPageBackground from '../../components/TopPageBackground'
 
 import faqBG from '../../assets/carousel/faq.png'
-import MyAccordion from '../../components/MyAccordion'
 import MultipleAccordions from '../../components/MultipleAccordions'
 import TopPageTitle from '../../components/TopPageTitle'
 

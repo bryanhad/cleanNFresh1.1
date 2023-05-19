@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import faqs from '../data/faqData'
 import MyAccordion from './MyAccordion'
 
@@ -20,7 +20,7 @@ const MultipleAccordions = () => {
     <div className='max-w-[1240px] mx-auto  rounded-xl overflow-hidden'>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center font-[500]  bg-slate-100'>
             {faqs.map((faq, i) => (
-                <div key={i} onClick={() => toggle(i)} className={`px-5 py-6 cursor-pointer ${activeCategory === i ? 'category aktif' : 'category'}`}>{faq.category}</div>
+                <div key={i} onClick={() => toggle(i)} className={`px-5 py-6 cursor-pointer ${activeCategory === i ? 'category aktif' : 'category'}`}>{faq.category.title}</div>
             ))}
         </div>
         <div>

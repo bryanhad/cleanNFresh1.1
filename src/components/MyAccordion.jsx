@@ -1,7 +1,13 @@
 import {FiChevronDown} from 'react-icons/fi'
 import {FiChevronUp} from 'react-icons/fi'
+import PropTypes from 'prop-types'
 
 const MyAccordion = ({array, activeItem:active, setActiveItem:setActive}) => {
+  MyAccordion.propTypes = {
+    array: PropTypes.array,
+    activeItem: PropTypes.any,
+    setActiveItem: PropTypes.any,
+  }
 
   const toggle = (index) => {
     if (active === index) {
@@ -18,9 +24,9 @@ const MyAccordion = ({array, activeItem:active, setActiveItem:setActive}) => {
               <h1 className='font-semibold text-lg text-slate-500'>{item.title}</h1>
               <p className='font-semibold text-xl text-slate-500'>{active === i ? <FiChevronUp/> : <FiChevronDown/>}</p>
             </div>
-            <p className={`text-sm mt-4 overflow-hidden duration-500 text-slate-500 ${active === i ? 'accordion-content show' : 'accordion-content'}`}>
+            <div className={`text-sm mt-4 overflow-hidden duration-500 text-slate-500 ${active === i ? 'accordion-content show' : 'accordion-content'}`}>
               {item.answer}
-            </p>
+            </div>
         </div>
       ))}
       

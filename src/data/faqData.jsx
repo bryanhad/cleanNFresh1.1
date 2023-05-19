@@ -1,16 +1,34 @@
+// react icons
+import {MdPhoneAndroid} from 'react-icons/md'
 
-// Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quos qui fuga sunt unde quaerat deleniti magni, facilis voluptatum obcaecati animi tempore sed.
+// images
+import supportImg from '../assets/illustrations/support.svg'
+
 const faqs = [
     {
-        category: 'Tentang Clean\'n Fresh',
+        category: { title: 'Tentang Clean\'n Fresh', icon: <MdPhoneAndroid/>},
         questions: [
             {
                 title: 'Siapa itu Clean\'n Fresh?',
-                answer: 'bisnis bersih rumah dongg'
+                answer: 'Clean\'n Fresh adalah provider jasa service yang bergerak di bidang pemberihsan rumah, ruko, apartemen, kantor, dan lain-lain.'
             },
             {
-                title: 'Kenapa saya harus percaya dengan Clean\'n Fresh?',
-                answer: 'udah dari tahun 2015 lohh, mantap dah pokoke'
+                title: 'Kenapa saya harus memilih Clean\'n Fresh?',
+                answer: (<div>
+                    <h1>Berikut alasan kenapa Clean&apos;n Fresh merupakan pilihan yang tepat:</h1>
+                    <ul className="list-disc ml-4   ">
+                        <li>Layanan service yang pastinya memuasakan.</li>
+                        <li>Harga yang sangat terjangkau.</li>
+                        <li>Alat Pembersih berteknologi tinggi yang sudah mendapatkan sertifikat Internasional.</li>
+                        <li>Penggunaan obat anti kuman yang terbaik dan tentunya aman untuk bayi.</li>
+                        <li>Pekerja yang sudah terlatih dan terseleksi secara ketat.</li>
+                        <li>Prosedur layanan pembersihan yang telah ter-standarisasi.</li>
+                        <li>Pengalaman Clean&apos;n Fresh yang sudah bertahun-tahun.</li>
+                        <li>Menjangkau hingga JADETABEK dan kota Medan.</li>
+                        <li>Pengalman kami yang luas, mulai dari melayani rumah, apartemen, kantor besar, gedung, sekolahan, tempat kursus, salon/spa, gedung reflexology/massage, bahkan Hotel bintang 4.</li>
+                    </ul>
+                    <h1>Anda dapat melihat segala aktivitas Clean&apos;n Fresh melalui instagram kami @clean_n_freshh</h1>
+                </div>)
             },
             {
                 title: 'Apa sih latar belakang dari pekerja Clean\'n Fresh?',
@@ -35,11 +53,14 @@ const faqs = [
         ]
     },
     {
-        category: 'Pemesanan Layanan',
+        category: { title: 'Pemesanan Layanan', icon: <MdPhoneAndroid/>},
         questions: [
             {
                 title: 'Bagaimana cara saya pesan layanan Clean\'n Fresh?',
-                answer: 'blablablablabla'
+                answer: (<div className='grid grid-cols-2'>
+                    <h1>Anda dapat menghubungi Clean&apos;n Fresh lewat WhatsApp kami <span>0815-11057725   </span> </h1>
+                    <img className='max-h-[100px]' src={supportImg} alt="" />
+                </div>)
             },
             {
                 title: 'Berapa lama waktu yang dibutuhkan petugas kebersihan hingga sampai?',
@@ -72,7 +93,7 @@ const faqs = [
         ]
     }, 
     {
-        category: 'Tindakan Pembersihan',
+        category: { title: 'Tindakan Pembersihan', icon: <MdPhoneAndroid/>},
         questions: [
             {
                 title: 'Apakah semua alat dan peralatan pembersih disediakan oleh Clean\'n Fresh?',
@@ -113,7 +134,7 @@ const faqs = [
         ]
     },
     {
-        category: 'Lain-lain',
+        category: { title: 'Lain-lain', icon: <MdPhoneAndroid/>},
         questions: [
             {
                 title: 'Apakah Clean\'n Fresh menyediakan promo?',
