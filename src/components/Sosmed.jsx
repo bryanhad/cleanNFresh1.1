@@ -38,7 +38,7 @@ const WhatsAppIcon = () => (
 )
 
 const InstagramIcon = () => (
-  <img className="max-w-[60px] p-[5px]" src={Instagram} alt="" />
+  <img className="max-w-[60px] p-[5px]" src={Instagram} alt="Instagram logo" />
 )
 
 export default Sosmed

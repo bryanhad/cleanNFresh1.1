@@ -1,4 +1,3 @@
-import React from 'react'
 import mapImg from '../../assets/photos/jabodetabek.png'
 import Sosmed from '../../components/Sosmed'
 import TitleSection from '../../components/TitleSection'

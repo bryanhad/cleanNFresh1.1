@@ -18,7 +18,7 @@ const FaqMainPage = () => {
         </p>
         BUTUH BANTUAN?
       </TopPageTitle>
-      <div className='px-4'>
+      <div className='px-4  mb-8'>
         <MultipleAccordions />
       </div>
     </div>
