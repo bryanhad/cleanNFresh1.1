@@ -27,7 +27,8 @@ const HomeCarousel = () => {
       <main className="max-w-[1240px] relative top-[45%] translate-y-[-50%] mx-auto z-[4] ">
         <div className="text-white relative px-4 w-[85%] md:w-[70%] xl:w-[60%] ">
           <div className="relative z-[4] flex flex-col items-start">
-            <h1 className="text-6xl font-semibold mb-2">CLEAN THE UNSEEN</h1>
+            <p className='font-[200]'>Clean The Unseen</p>
+            <h1 className="text-6xl font-semibold mb-2">Clean&apos;n Fresh</h1>
             <p className="mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
               dolor tenetur numquam, recusandae debitis illum corrupti laborum?

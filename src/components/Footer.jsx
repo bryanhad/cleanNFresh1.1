@@ -3,8 +3,9 @@ import FacebookIcon from '@mui/icons-material/Facebook'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
 import { Link } from 'react-router-dom'
-import { BsTelephoneFill } from 'react-icons/bs'
 import { AiFillInstagram } from 'react-icons/ai'
+import { FaWhatsapp } from 'react-icons/fa'
+
 
 const Footer = () => {
   const scrollUp = () => {
@@ -55,7 +56,7 @@ const Footer = () => {
               </h5>
               <div className="flex flex-col gap-4">
                 <span className="flex items-center justify-center max-md:flex-wrap gap-2">
-                  <BsTelephoneFill className="text-[25px]" />
+                  <FaWhatsapp className="text-[25px]" />
                   <Link
                     to="https://wa.me/6281511057728?text=Halo%20clean'n%20Fresh,%20saya%20butuh%20bantuan"
                     target="_blank"

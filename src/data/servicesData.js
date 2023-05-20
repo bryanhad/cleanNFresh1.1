@@ -37,7 +37,7 @@ const services = [
     {
         image: [mobil_1, mobil_2, mobil_3],
         title: 'Cleaning Mobil',
-        desc: 'Membersihkan mobil dari noda dan bau tidak sedap.',
+        desc: 'Membersihkan mobil dari debu, noda, dan bau tidak sedap.',
         fulldesc: 'eee',
     },
 ]

@@ -1,7 +1,7 @@
 import React from 'react'
 import mapImg from '../../assets/photos/jabodetabek.png'
-import TitleCenterToLeft from '../../components/TitleCenterToLeft'
 import Sosmed from '../../components/Sosmed'
+import TitleSection from '../../components/TitleSection'
 
 const ContactUs = () => {
   return (
@@ -9,13 +9,11 @@ const ContactUs = () => {
       <div className="max-w-[1240px] mx-auto grid lg:grid-cols-2 gap-10">
         <div>
           <span className="flex flex-col items-center lg:items-start">
-            <TitleCenterToLeft desc="Contact">Hubungi Kami</TitleCenterToLeft>
-            <p className="text-center lg:text-left">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+            {/* <TitleCenterToLeft desc="Contact">Hubungi Kami</TitleCenterToLeft> */}
+            <TitleSection direction='center-to-left' color='primary' desc='Contact Us' text='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
               aperiam facere totam corporis, iste necessitatibus nam magnam
               deserunt reiciendis culpa qui blanditiis quasi temporibus ullam.
-              Iusto, eum!
-            </p>
+              Iusto, eum!'>Hubungi Kami</TitleSection>
           </span>
           <span className="grid max-sm:mx-auto sm:grid-cols-2 mt-4">
             <Sosmed

@@ -1,15 +1,17 @@
 import React from 'react'
 import TopPageTitle from '../../components/TopPageTitle'
-import EmployeeBackground from '../../components/EmployeeBackground'
+import employeeBg from '../../assets/carousel/employeeBackground.png'
 import TopPageBackground from '../../components/TopPageBackground'
+import Kenalan from './Kenalan'
 
 const AboutMainPage = () => {
   return (
     <div className="h-[100vh] relative">
-      <EmployeeBackground />
+      {/* <EmployeeBackground /> */}
       <TopPageBackground
         opacity="opacity-[92%]"
         direction="left"
+        background={employeeBg}
       />
       <TopPageTitle
         direction="left"
@@ -20,6 +22,7 @@ const AboutMainPage = () => {
         </p>
         KENALAN YUK
       </TopPageTitle>
+      <Kenalan/>
     </div>
   )
 }

@@ -12,16 +12,18 @@ const WhyChooseUs = () => {
           alt=""
         />
         <div className="max-lg:flex max-lg:flex-col max-lg:items-center">
-          <TitleSection
-            direction="center-to-left"
-            color="primary"
-            desc="About Us"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            assumenda porro fuga consequatur ipsam nostrum maxime sed perspiciatis
-            incidunt maiores quia Lorem ipsum dolor sit amet."
-          >
-            Kenapa Pilih Kami?
-          </TitleSection>
+          <div className='mb-4'>
+            <TitleSection
+              direction="center-to-left"
+              color="primary"
+              desc="About Us"
+              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              assumenda porro fuga consequatur ipsam nostrum maxime sed perspiciatis
+              incidunt maiores quia Lorem ipsum dolor sit amet."
+            >
+              Kenapa Pilih Kami?
+            </TitleSection>
+          </div>
           <MyButton to="tentang" size="button-big">
             Tentang Kami
           </MyButton>
