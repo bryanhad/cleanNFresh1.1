@@ -23,7 +23,7 @@ const MyAccordion = ({
           className=" p-4 cursor-pointer border-b-2"
         >
           <div className="flex justify-between ">
-            <h1 className="font-semibold text-lg text-slate-500">
+            <h1 className="font-semibold md:text-lg text-slate-500">
               {item.title}
             </h1>
             <p className="font-semibold text-xl text-slate-500">

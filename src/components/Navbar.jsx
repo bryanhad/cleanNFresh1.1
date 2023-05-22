@@ -10,9 +10,14 @@ import CallIcon from '@mui/icons-material/Call'
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 
+import PromoButton from '../components/PromoButton'
+import Modal from '../components/Modal'
+import PromoKasur from '../components/PromoStuffs/PromoKasur'
 
-const Navbar = ({zIndex}) => {
+const Navbar = ({ zIndex }) => {
   const [nav, setNav] = useState(false)
+  const [showButton, setShowButton] = useState(true)
+  const [showModal, setShowModal] = useState(false)
 
   const navButtonStyle = 'px-4 py-2 rounded-md'
   const burgerNavLinkStyle = 'flex items-center py-2 gap-3 px-4'
@@ -20,16 +25,19 @@ const Navbar = ({zIndex}) => {
 
   return (
     <>
-      <nav className={`w-full h-[80px] px-4 border-b-2 bg-white sticky top-0 ${zIndex}`}>
-        <main className="max-w-[1240px] mx-auto h-full flex items-center justify-between">
+      <nav
+        className={`w-full h-[80px] px-4 border-b-2 bg-white sticky top-0 ${zIndex}`}
+      >
+        <main className="max-w-[1240px] mx-auto h-full flex items-center justify-between relative">
           <Link to="/cleanNFresh1.1">
             <img className="max-h-[50px]" src={LOGO} alt="" />
           </Link>
 
+          {/* NAV BUTTON ON SMALL */}
           <div className="h-[50px] w-[50px] relative md:hidden">
             <div
               onClick={() => setNav(!nav)}
-              className=" h-[50px] w-[50px] relative z-[10] flex justify-center items-center md:hidden"
+              className=" h-[50px] w-[50px] relative z-[4] flex justify-center items-center md:hidden"
             >
               {nav ? <CloseIcon /> : <Burger />}
             </div>
@@ -39,8 +47,8 @@ const Navbar = ({zIndex}) => {
           <div
             className={
               nav
-                ? 'fixed top-0 right-0  w-[70%] h-full bg-[#ffffffee] ease-in-out duration-500 z-[19]'
-                : 'fixed top-0 right-[-100%] w-[60%] h-full bg-white opacity-0 ease-in-out duration-500 z-[19]'
+                ? 'fixed top-0 right-0  w-[70%] h-full bg-[#ffffffee] ease-in-out duration-500 z-[3]'
+                : 'fixed top-0 right-[-100%] w-[60%] h-full bg-white opacity-0 ease-in-out duration-500 z-[3]'
             }
           >
             <main className="mt-[80px] pr-4 flex flex-col items-end gap-4">
@@ -95,6 +103,15 @@ const Navbar = ({zIndex}) => {
             </NavLink>
           </div>
         </main>
+        <PromoButton
+          show={showButton}
+          setShowButton={setShowButton}
+          setShowModal={setShowModal}
+          zIndex="z-[2]"
+        />
+        <Modal show={showModal} setShowModal={setShowModal} color="bg-white">
+          <PromoKasur />
+        </Modal>
       </nav>
     </>
   )

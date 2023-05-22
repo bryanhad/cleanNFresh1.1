@@ -10,7 +10,7 @@ const Modal = ({ children, color, show, setShowModal }) => {
           <button
             onClick={() => setShowModal(!show)}
             type="button"
-            className="absolute right-5 top-5 text-[25px]"
+            className="absolute right-5 top-5 text-[20px] text-slate-300"
           >
             <AiOutlineClose />
           </button>
