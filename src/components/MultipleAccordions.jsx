@@ -32,9 +32,9 @@ const MultipleAccordions = () => {
           </div>
         ))}
       </div>
-      <div className='grid grid-cols-2 bg-white'> 
+      <div className='grid md:grid-cols-2 bg-white'> 
         <div className='p-4 flex items-center justify-center relative'>
-          <img className='max-full max-w-[60%] relative z-[1]' src={faqs[activeCategory].background} alt={`Image of ${faqs[activeCategory].title}`} />
+          <img className='max-full max-w-[80%] relative z-[1]' src={faqs[activeCategory].background} alt={`Image of ${faqs[activeCategory].title}`} />
           </div>
         <MyAccordion
           array={faqs[activeCategory].questions}

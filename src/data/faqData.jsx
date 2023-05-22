@@ -5,7 +5,10 @@ import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { MdCleaningServices } from "react-icons/md";
 
 // images
-import LOGO from "../assets/cleanNFreshLogo.png";
+import LOGO from "../assets/illustrations/greetings.png";
+import orderImg from "../assets/illustrations/orderingGood.png";
+import cleaningImg from "../assets/illustrations/cleaningGood.png";
+import othersImg from "../assets/illustrations/others.png";
 import { Link } from "react-router-dom";
 
 const importantTextStyle = "text-primary-darkest font-[500]";
@@ -153,6 +156,7 @@ const faqs = [
   },
   {
     category: { title: "Pemesanan Layanan", icon: <MdPhoneAndroid className={iconStyle} /> },
+    background: orderImg,
     questions: [
       {
         title: "Bagaimana cara saya pesan layanan Clean'n Fresh?",
@@ -236,6 +240,7 @@ const faqs = [
   },
   {
     category: { title: "Tindakan Pembersihan", icon: <MdCleaningServices className={iconStyle} /> },
+    background: cleaningImg,
     questions: [
       {
         title:
@@ -265,6 +270,7 @@ const faqs = [
   },
   {
     category: { title: "Lain-lain", icon: <AiOutlineQuestionCircle className={iconStyle} /> },
+    background: othersImg,
     questions: [
       {
         title: "Apakah Clean'n Fresh menyediakan promo?",
