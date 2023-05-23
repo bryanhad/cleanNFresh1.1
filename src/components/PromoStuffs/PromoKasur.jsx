@@ -1,8 +1,8 @@
-import LOGO from "../../assets/cleanNFreshLogo.png";
+// import LOGO from "../../assets/cleanNFreshLogo.png";
 import vacuumImgMobile from "../../assets/photos/vacuumPromo.png";
 import vacuumImg from "../../assets/photos/vacuumOnlyGood.png";
 import saleTag from "../../assets/icons/saleTag.png";
-import bedBug from "../../assets/photos/bed-bug.jpg";
+// import bedBug from "../../assets/photos/bed-bug.jpg";
 import Price from "../Price";
 import MyButton from "../MyButton";
 

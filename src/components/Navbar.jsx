@@ -7,7 +7,7 @@ import InfoIcon from '@mui/icons-material/Info'
 import CleaningServicesIcon from '@mui/icons-material/CleaningServices'
 import QuizIcon from '@mui/icons-material/Quiz'
 import CallIcon from '@mui/icons-material/Call'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
 import PromoButton from '../components/PromoButton'
@@ -18,6 +18,12 @@ const Navbar = ({ zIndex }) => {
   const [nav, setNav] = useState(false)
   const [showButton, setShowButton] = useState(true)
   const [showModal, setShowModal] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowModal(true)
+    }, 3000);
+  }, [])
 
   const navButtonStyle = 'px-4 py-2 rounded-md'
   const burgerNavLinkStyle = 'flex items-center py-2 gap-3 px-4'
