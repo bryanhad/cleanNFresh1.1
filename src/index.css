@@ -178,3 +178,24 @@
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
+
+
+
+.triangle-up-right {
+  width: 0;
+  height: 0;
+  padding-left:70%;
+  padding-top: 70%;
+  overflow: hidden;
+}
+.triangle-up-right:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left:-500px;
+  margin-top:-500px;
+  
+  border-left: 500px solid transparent;
+  border-top: 500px solid #4abef0;
+}
