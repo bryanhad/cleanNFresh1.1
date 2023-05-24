@@ -1,10 +1,31 @@
-import React from 'react'
-import PromoButton from '../../components/PromoButton'
 
 const Kenalan = () => {
   return (
-    <div className='max-w-[1240px] h-[80vh] mx-auto bg-white rounded-md p-4'>
+    <>
+    <div className='max-w-[1240px] mx-auto bg-white rounded-md p-4'>
+      run
+      <br />
+      <br />
+      <br />
+      <br />
+      sa
+      <br />
+      <br />
+      <br />
+      <br />
+      sa
+      <br />
+      <br />
+      <br />
+      <br />
+      sa
+      <br />
+      <br />
+      <br />
+      <br />
+      sa
     </div>
+    </>
   )
 }
 

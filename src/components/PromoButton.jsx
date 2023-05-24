@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { AiOutlineClose } from "react-icons/ai";
 import hotSale from "../assets/icons/sales.png";
+import {IoIosArrowDropleftCircle} from 'react-icons/io'
 
 const PromoButton = ({
   children,
@@ -22,10 +23,11 @@ const PromoButton = ({
         onClick={show ? () => setShowModal(true) : undefined}
         type="button"
         className={`${BUTTON_STYLE}  rounded-full duration-500 p-2 font-bold flex items-center relative justify-center text-white ${
-          show ? "myBounce" : "bg-amber-300 opacity-[50%]"
+          show ? "myBounce" : "bg-amber-300 opacity-[70%]"
         }`}
       >
-        <img src={hotSale} alt="" />
+        {show ? '' : <IoIosArrowDropleftCircle className="absolute left-0 text-[40px] opacity-[100%]"/>  }
+        <img src={hotSale} alt="hot sale icon" />
       </button>
       <button
         onClick={() => setShowButton(false)}

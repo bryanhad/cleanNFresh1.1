@@ -1,11 +1,19 @@
 import PropTypes from 'prop-types'
 import { AiOutlineClose } from 'react-icons/ai'
 
-const Modal = ({ children, color, show, setShowModal }) => {
+const Modal = ({ children, color, show, setShowModal, zIndex }) => {
   return (
     show && (
-      <div className="fixed z-[99] top-[0px] left-0 w-[100%] h-screen bg-black/25 flex justify-center items-center">
-        <div className={`relative w-[80%] max-w-[1000px] max-h-[75%] ${color} rounded-xl overflow-hidden`}>
+      <div
+        onClick={() => setShowModal(!show)}
+        className={`fixed ${zIndex} top-[0px] left-0 w-[100%] h-screen bg-black/30 flex justify-center items-center`}
+      >
+        <div
+          onClick={e => {
+            e.stopPropagation()
+          }}
+          className={`relative w-[80%] max-w-[1000px] max-h-[80%] ${color} overflow-hidden rounded-xl`}
+        >
           {children}
           <button
             onClick={() => setShowModal(!show)}

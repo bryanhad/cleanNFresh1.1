@@ -1,27 +1,35 @@
+import { useContext, useState } from 'react'
 import MyButton from './MyButton'
 import PropTypes from 'prop-types'
+import { jasaContext } from '../context/jasaContext'
 
-const JasaCard = ({ children, image, desc }) => {
-  let thumbnail
-  let to
+const JasaCard = ({ children, image, desc, service }) => {
+  const { setJasa } = useContext(jasaContext)
+
+  // let thumbnail
+  // let to
 
   // Button path
-  const path = children.split(' ').join('-').toLowerCase()
-  to = path
+  // const path = children.split(' ').join('-').toLowerCase()
+  // to = path
 
   // Assign thumbnail according to image data-type
-  if (image instanceof Array === true) {
-    thumbnail = image[0]
-  } else {
-    thumbnail = image
+  // if (image instanceof Array === true) {
+  //   thumbnail = image[0]
+  // } else {
+  //   thumbnail = image
+  // }
+
+  const handleClick = () => {
+    setJasa({clicked:true, content:service})
   }
 
   return (
-    <div className="shadow-xl flex flex-col bg-white relative z-[8] md:max-w-[80%] md:mx-auto">
+    <div onClick={() => handleClick()} className="shadow-xl flex flex-col bg-white relative z-[8] md:max-w-[80%] md:mx-auto rounded-xl overflow-hidden">
       <div className="max-h-[200px] sm:max-h-[300px] overflow-hidden cursor-pointer">
         <img
           className="w-full h-full object-cover hover:scale-[1.2] duration-300"
-          src={thumbnail}
+          src={image}
           alt={`"${children} image"`}
         />
       </div>
@@ -31,7 +39,11 @@ const JasaCard = ({ children, image, desc }) => {
         </h1>
         <p className="text-[13px] text-slate-400 text-center my-1">{desc}</p>
         <div className="mt-2 mx-auto">
-          <MyButton size="button-small" hiddenAtMobile to={to}>
+          <MyButton
+            size="button-small"
+            hiddenAtMobile
+            onclick={() => handleClick()}
+          >
             Lihat Detail
           </MyButton>
         </div>

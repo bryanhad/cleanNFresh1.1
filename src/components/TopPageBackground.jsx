@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import waveSVG from '../assets/background/waves.svg'
 
-const TopPageBackground = ({ direction, background }) => {
+const TopPageBackground = ({ direction, background, opacity }) => {
   let skewed = ''
 
   if (direction === 'left') {
@@ -20,7 +20,7 @@ const TopPageBackground = ({ direction, background }) => {
       <div className={`skewed ${skewed}`}></div>
 
       {/* COLOR FILTER */}
-      <div className="w-full h-full duration-300 sm:hidden bg-[#2da1d3] opacity-[30%] absolute top-0 z-[2] "></div>
+      <div className={`w-full h-full duration-300 sm:hidden bg-[#2da1d3] ${opacity} absolute top-0 z-[2] `}></div>
 
       {/* IMAGE */}
       <div
@@ -41,6 +41,11 @@ const TopPageBackground = ({ direction, background }) => {
 TopPageBackground.propTypes = {
   direction: PropTypes.oneOf(['left', 'right']).isRequired,
   background: PropTypes.node,
+  opacity: PropTypes.string,
+}
+
+TopPageBackground.defaultProps = {
+  opacity: 'opacity-[32%]'
 }
 
 export default TopPageBackground

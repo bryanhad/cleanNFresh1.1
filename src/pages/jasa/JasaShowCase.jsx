@@ -11,6 +11,7 @@ const JasaShowCase = () => {
           key={service.title}
           image={service.image}
           desc={service.desc}
+          service={service}
         >
           {service.title}
         </JasaCard>

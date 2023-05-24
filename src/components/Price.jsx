@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const Price = ({ price, color, circleStyle }) => {
   return (
-    <div className={`text-[28vw] sm:text-[150px] font-bold ${color} relative`}>
+    <div className={`text-[25vw] sm:text-[150px] font-bold ${color} relative`}>
       <span className="tracking-[-7px] pr-[5px] text-slate-400">
       {price}
       </span>
