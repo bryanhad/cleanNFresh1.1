@@ -8,6 +8,7 @@ import FaqMainPage from './pages/faq/FaqMainPage'
 import AboutMainPage from './pages/about/AboutMainPage'
 import KontakMainPage from './pages/kontak/KontakMainPage'
 import { jasaContext } from './context/jasaContext'
+import { promoModalContext } from './context/promoModalContext'
 
 
 const App = () => {
@@ -16,14 +17,18 @@ const App = () => {
     content: {}
   })
 
+  const [showPromoModal, setShowPromoModal] = useState(false)
+
   return (
     <Routes>
       <Route
         path="/cleanNFresh1.1"
         element={
-          <jasaContext.Provider value={{ jasa, setJasa }}>
-              <RootLayout />
-          </jasaContext.Provider>
+          <promoModalContext.Provider value={{showPromoModal, setShowPromoModal}}>
+            <jasaContext.Provider value={{ jasa, setJasa }}>
+                <RootLayout />
+            </jasaContext.Provider>
+          </promoModalContext.Provider>
         }
       >
         <Route index element={<Home />} />

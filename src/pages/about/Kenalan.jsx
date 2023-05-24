@@ -2,28 +2,28 @@
 const Kenalan = () => {
   return (
     <>
-    <div className='max-w-[1240px] mx-auto bg-white rounded-md p-4'>
-      run
+    <div className='max-w-[1240px] mx-auto bg-white rounded-md p-4 text-center'>
+      BEBAS
       <br />
       <br />
       <br />
       <br />
-      sa
+      DISI
       <br />
       <br />
       <br />
       <br />
-      sa
+      APA
       <br />
       <br />
       <br />
       <br />
-      sa
+      AJA
       <br />
       <br />
       <br />
       <br />
-      sa
+      BOLEEEH
     </div>
     </>
   )

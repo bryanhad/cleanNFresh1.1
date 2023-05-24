@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const MyButton = ({ children, size, to, hiddenAtMobile, onclick }) => {
   return to ? (
     <Link to={to}>
-      <button className={`button ${size}`}>
+      <button className={`button ${size}`} onClick={onclick}>
         {children}
         <OutboundIcon
           className={

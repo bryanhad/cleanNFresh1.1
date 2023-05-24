@@ -9,17 +9,18 @@ import BurgerMenu from '../components/BurgerMenu'
 import BurgerCloseButton from '../components/BurgerCloseButton'
 import { jasaContext } from '../context/jasaContext'
 import JasaModal from '../components/JasaModal'
+import { promoModalContext } from '../context/promoModalContext'
 
 
 const RootLayout = () => {
   const [showButton, setShowButton] = useState(true)
-  const [showModal, setShowModal] = useState(false)
   const [nav, setNav] = useState(false)
+  const {showPromoModal, setShowPromoModal} = useContext(promoModalContext)
   const {jasa, setJasa} = useContext(jasaContext)
 
   useEffect(() => {
     setTimeout(() => {
-      setShowModal(true)
+      setShowPromoModal(true)
     }, 3000)
   }, [])
 
@@ -37,10 +38,10 @@ const RootLayout = () => {
       <PromoButton
         show={showButton}
         setShowButton={setShowButton}
-        setShowModal={setShowModal}
+        setShowModal={setShowPromoModal}
         zIndex="z-[2]"
       />
-      <Modal show={showModal} setShowModal={setShowModal} color="bg-white" zIndex='z-[10]'>
+      <Modal show={showPromoModal} setShowModal={setShowPromoModal} color="bg-white" zIndex='z-[10]'>
         <PromoKasur />
       </Modal>
       {jasa.clicked && (

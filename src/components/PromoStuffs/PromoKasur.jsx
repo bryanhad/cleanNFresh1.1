@@ -7,8 +7,11 @@ import vacuumHand from "../../assets/photos/vacuumGood.png";
 // import bedBug from "../../assets/photos/bed-bug.jpg";
 import Price from "../Price";
 import MyButton from "../MyButton";
+import { useContext } from "react";
+import { promoModalContext } from "../../context/promoModalContext";
 
 const PromoKasur = () => {
+  const {setShowPromoModal} = useContext(promoModalContext)
   return (
     <div className="md:grid md:grid-cols-2 ">
       <div className="hidden md:block ">
@@ -60,7 +63,7 @@ const PromoKasur = () => {
           {/* text & button */}
           {/* <p className="mb-4">LIMITED TIME ONLY</p> */}
           <div className="mx-auto max-w-max">
-            <MyButton size="button-small" hiddenAtMobile>
+            <MyButton size="button-small" hiddenAtMobile onclick={() => setShowPromoModal(false)} to='layanan'>
               Cek Sekarang
             </MyButton>
           </div>
