@@ -1,10 +1,7 @@
-import LOGO from '../assets/cleanNFreshLogo.png'
-import FacebookIcon from '@mui/icons-material/Facebook'
-import InstagramIcon from '@mui/icons-material/Instagram'
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
 import { Link } from 'react-router-dom'
 import { AiFillInstagram } from 'react-icons/ai'
 import { FaWhatsapp } from 'react-icons/fa'
+import { AiOutlineArrowUp } from 'react-icons/ai'
 
 
 const Footer = () => {
@@ -20,7 +17,7 @@ const Footer = () => {
       <footer className="w-full bg-[#2c87ad] mt-auto">
         <div className="max-w-[1240px] text-white md:mx-auto px-4 h-full py-12 relative grid md:grid-cols-2">
           <div className="absolute z-[2] top-0 translate-y-[-50%] right-[10%] group cursor-pointer">
-            <ArrowUpwardIcon
+            <AiOutlineArrowUp
               style={{ fontSize: '40px' }}
               onClick={scrollUp}
               className="group-hover:scale-[1.1] duration-200 text-[#2c87ad]  bg-white shadow-xl p-1 rounded-full"
@@ -43,11 +40,10 @@ const Footer = () => {
                 Links
               </h5>
               <div className="flex flex-col max-md:items-center xl:grid xl:grid-cols-2 gap-2">
-                <Link to="/">Home</Link>
-                <Link to="tentang">Tentang Kami</Link>
+                <Link to="/cleanNFresh1.1">Home</Link>
                 <Link to="layanan">Layanan</Link>
+                <Link to="tentang">Tentang Kami</Link>
                 <Link to="bantuan">Bantuan</Link>
-                <Link to="kontak">Kontak</Link>
               </div>
             </div>
             <div className="my-2 mx-6 md:mx-2">

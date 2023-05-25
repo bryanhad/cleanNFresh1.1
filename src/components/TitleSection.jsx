@@ -45,7 +45,7 @@ TitleSection.propTypes = {
     'center-to-center',
     'center-to-right',
   ]).isRequired,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.string,
   desc: PropTypes.string,
   text: PropTypes.string,
   color: PropTypes.oneOf(['white', 'primary']),

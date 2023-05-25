@@ -1,4 +1,4 @@
-import services from '../../data/servicesData.js'
+import services from '../../data/servicesData'
 import JasaCard from '../../components/JasaCard'
 
 

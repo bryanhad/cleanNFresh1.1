@@ -1,22 +1,16 @@
 import { Link, NavLink } from 'react-router-dom'
 import LOGO from '../assets/cleanNFreshLogo.png'
-
-
-import { useState } from 'react'
 import PropTypes from 'prop-types'
 import { FaWhatsapp } from 'react-icons/fa'
 
-const Navbar = ({ zIndex, nav }) => {
-
-
+const Navbar = ({ zIndex }) => {
 
   const navButtonStyle = 'px-4 py-2 rounded-md'
-
 
   return (
     <>
       <nav
-        className={`w-full h-[80px] px-4 border-b-2 bg-white sticky top-0 ${zIndex}`}
+        className={`w-full h-[80px] px-4 shadow-md bg-white sticky top-0 ${zIndex}`}
       >
         <main className="max-w-[1240px] mx-auto h-full flex items-center justify-between relative">
           <Link to="/cleanNFresh1.1">

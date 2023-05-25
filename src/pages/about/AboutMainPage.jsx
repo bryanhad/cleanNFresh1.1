@@ -4,6 +4,7 @@ import employeeBg from '../../assets/carousel/employeeBackground.png'
 import TopPageBackground from '../../components/TopPageBackground'
 import Kenalan from './Kenalan'
 import HomeSecondBanner from '../home/HomeSecondBanner'
+import Testimoni from '../home/Testimoni'
 
 
 const AboutMainPage = () => {
@@ -17,7 +18,7 @@ const AboutMainPage = () => {
       />
       <TopPageTitle
         direction="left"
-        desc="Apakh Anda lelah melakukan pekerjaan rumah tangga? Apakah Anda merasa stres seperti tidak punya cukup waktu dalam sehari? Apakah rumah atau tempat kerja Anda terasa berantakan dan kotor? Jangan khawatir."
+        desc="Apakah Anda lelah melakukan pekerjaan rumah tangga? Apakah Anda merasa stres seperti tidak punya cukup waktu dalam sehari? Jangan khawatir."
       >
         <p className="text-[14px] font-[300] py-2 text-green-200">About Us</p>
         KENALAN YUK
@@ -26,7 +27,7 @@ const AboutMainPage = () => {
       <Kenalan />
       </div>
       <HomeSecondBanner/>
-
+      <Testimoni/>
     </div>
   )
 }
