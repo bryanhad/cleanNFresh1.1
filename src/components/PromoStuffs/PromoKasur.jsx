@@ -53,7 +53,7 @@ const PromoKasur = () => {
                   circleStyle="bg-amber-400 text-amber-700"
                 />
                 <img
-                  className="absolute max-w-[15vw] sm:max-w-[100px] left-0 translate-x-[-50%] bottom-[20%] translate-y-[100%]"
+                  className="absolute max-w-[13vw] sm:max-w-[100px] left-0 translate-x-[-50%] bottom-[20%] translate-y-[100%]"
                   src={saleTag}
                   alt=""
                 />
@@ -62,7 +62,7 @@ const PromoKasur = () => {
           </div>
           {/* text & button */}
           {/* <p className="mb-4">LIMITED TIME ONLY</p> */}
-          <div className="mx-auto max-w-max">
+          <div className="mx-auto max-w-max mt-4">
             <MyButton size="button-small" hiddenAtMobile onclick={() => setShowPromoModal(false)} to='layanan'>
               Cek Sekarang
             </MyButton>
