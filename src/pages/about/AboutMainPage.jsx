@@ -18,7 +18,7 @@ const AboutMainPage = () => {
       />
       <TopPageTitle
         direction="left"
-        desc="Apakah Anda lelah melakukan pekerjaan rumah tangga? Apakah Anda merasa stres seperti tidak punya cukup waktu dalam sehari? Jangan khawatir."
+        minHeight='min-h-[150px]'
       >
         <p className="text-[14px] font-[300] py-2 text-green-200">About Us</p>
         KENALAN YUK

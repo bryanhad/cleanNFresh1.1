@@ -11,7 +11,7 @@ const JasaMainPage = () => {
       <TopPageBackground direction="right" background={handBackground} />
       <TopPageTitle
         direction="right"
-        desc="Apakah Anda lelah melakukan pekerjaan rumah tangga? Apakah Anda merasa stres seperti tidak punya cukup waktu dalam sehari? Apakah rumah atau tempat kerja Anda terasa berantakan dan kotor? Jangan khawatir."
+        desc="Apakah anda yakin kasur anda tidak dihuni tungau? Apakah anda yakin perabotan dan ruangan anda bersih dari kotoran dan kuman? Jangan khawatir. Clean'n Fresh menggunakan alat teknologi terkini yang telah disertifikasi oleh AHAM dan AAFA, sehingga menjamin tingkat kebersihan dan keamanan dari prosedur kami."
       >
         <p className="text-[14px] font-[300] py-2 text-green-200">
           Our Services

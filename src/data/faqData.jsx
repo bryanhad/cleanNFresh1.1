@@ -53,7 +53,7 @@ const faqs = [
               <li>Pengalaman Clean&apos;n Fresh yang sudah bertahun-tahun.</li>
               <li>Menjangkau hingga JADETABEK dan kota Medan.</li>
               <li>
-                Pengalman kami yang luas, mulai dari melayani rumah, apartemen,
+                Pengalaman kami yang luas, mulai dari melayani rumah, apartemen,
                 kantor besar, gedung, sekolahan, tempat kursus, salon/spa,
                 gedung reflexology/massage, bahkan Hotel bintang 4.
               </li>

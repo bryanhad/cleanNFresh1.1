@@ -23,6 +23,7 @@ const HomeBanner = () => {
             <AiOutlineClockCircle className={iconStyle} />
           }
           title="KAMI BEROPERASI SENIN-SABTU"
+          extra="MINGGU SPECIAL APPOINTMENT"
           desc="08:00 - 17:00"
         />
         <Line />
@@ -35,21 +36,22 @@ const HomeBanner = () => {
             />
           }
           title="KAMI MELAYANI"
-          desc="JABODETABEK"
+          desc="JADETABEK"
         />
       </div>
     </Banner>
   )
 }
 
-const Item = ({ icon, title, desc }) => {
+const Item = ({ icon, title, desc, extra }) => {
   return (
     <div className="flex flex-col sm:flex-row items-center">
       {icon}
       <div className="sm:ml-8 sm:flex lg:block sm:items-center">
-        <h1 className="font-bold text-[12px] sm:max-lg:text-[14px] tracking-wider max-sm:text-center">
+        <h1 className="font-bold text-[12px] sm:text-[14px] tracking-wider max-sm:text-center">
           {title}
         </h1>
+        <h5 className='text-[10px] sm:text-[12px] max-sm:text-center text-[#3593bb] font-bold sm:max-lg:ml-4'>{extra}</h5>
         <p className="font-bold text-lg lg:text-3xl text-amber-200 sm:max-lg:ml-4 max-sm:text-center">
           {desc}
         </p>

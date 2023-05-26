@@ -22,17 +22,17 @@ const HomeSecondBanner = () => {
           <Item
             icon={<MdCleaningServices />}
             title="Produk Berkualitas"
-            desc="Seluruh pegawai telah melewati training yang menekankan profesionalisme dan keramahan"
+            desc="Kami menggunakan Vacuum Hydrocleaner berteknologi tinggi yang telah tersertifikasi"
           />
           <Item
             icon={<TbFaceMask />}
             title="COVID-19 Protocol"
-            desc="Seluruh pegawai telah melewati training yang menekankan profesionalisme dan keramahan"
+            desc="Semua pegawai kami sudah divaksin dan selalu kami pastikan dalam kondisi sehat pada saat bekerja"
           />
           <Item
             icon={<BsStars />}
             title="Berpengalaman"
-            desc="Seluruh pegawai telah melewati training yang menekankan profesionalisme dan keramahan"
+            desc="Pegawai kami sudah berpengalaman lebih dari 3 tahun dan memiliki standar yang tinggi"
           />
         </div>
       </div>

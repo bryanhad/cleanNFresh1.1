@@ -29,10 +29,8 @@ const HomeCarousel = () => {
           <div className="relative z-[4] flex flex-col items-start">
             <p className='font-[200]'>Clean The Unseen</p>
             <h1 className="text-6xl font-semibold mb-2">Clean&apos;n Fresh</h1>
-            <p className="mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              dolor tenetur numquam, recusandae debitis illum corrupti laborum?
-              Voluptatem aliquam. lorem12
+            <p className="mb-4 text-sm">
+            Apakah anda yakin kasur anda tidak dihuni tungau? Apakah anda yakin perabotan dan ruangan anda bersih dari kotoran dan kuman? Jangan khawatir. Clean'n Fresh menggunakan alat teknologi terkini yang telah disertifikasi oleh AHAM dan AAFA, sehingga menjamin tingkat kebersihan dan keamanan dari prosedur kami.
             </p>
             <MyButton to='layanan' size='button-big'>Jasa Kami</MyButton>
           </div>

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import BubbleChartIcon from '@mui/icons-material/BubbleChart'
 
-const TopPageTitle = ({ direction, children, desc }) => {
+const TopPageTitle = ({ direction, children, desc, minHeight }) => {
   let iconPosition = ''
   let text = ''
   let main = ''
@@ -17,14 +17,14 @@ const TopPageTitle = ({ direction, children, desc }) => {
 
   return (
     <main
-      className={`max-w-[1240px] ${main} min-h-[300px] flex items-center mx-auto relative z-[-1]`}
+      className={`max-w-[1240px] ${main} ${minHeight} flex items-center mx-auto relative z-[-1]`}
     >
       <div className="text-white relative px-4 sm:w-[90%] md:w-[70%] xl:w-[60%] ">
         <div className={`flex flex-col ${text} `}>
           <h1 className="text-5xl sm:text-6xl font-semibold mb-2 max-sm:break-words">
             {children}
           </h1>
-          <p className="mb-4 text-sm sm:text-base">{desc}</p>
+          <p className="mb-2 pt-2 text-sm sm:text-base">{desc}</p>
         </div>
 
         <div
@@ -44,6 +44,11 @@ TopPageTitle.propTypes = {
   direction: PropTypes.string.isRequired,
   children: PropTypes.any,
   desc: PropTypes.string,
+  minHeight: PropTypes.string,
+}
+
+TopPageTitle.defaultProps = {
+  minHeight: 'min-h-[300px]'
 }
 
 export default TopPageTitle

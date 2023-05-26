@@ -17,9 +17,7 @@ const WhyChooseUs = () => {
               direction="center-to-left"
               color="primary"
               desc="About Us"
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              assumenda porro fuga consequatur ipsam nostrum maxime sed perspiciatis
-              incidunt maiores quia Lorem ipsum dolor sit amet."
+              text="Clean'n Fresh merupakan provider jasa kebersihan dengan harga yang sangat terjangkau. Selain layanan pembersihan yang memuaskan, Clean'n Fresh juga menggunakan mesin berteknologi tinggi yang sudah mendapat sertifikat internasional."
             >
               Kenapa Pilih Kami?
             </TitleSection>

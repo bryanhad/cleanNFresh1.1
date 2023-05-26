@@ -9,10 +9,14 @@ const ContactUs = () => {
         <div>
           <span className="flex flex-col items-center lg:items-start">
             {/* <TitleCenterToLeft desc="Contact">Hubungi Kami</TitleCenterToLeft> */}
-            <TitleSection direction='center-to-left' color='primary' desc='Contact Us' text='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-              aperiam facere totam corporis, iste necessitatibus nam magnam
-              deserunt reiciendis culpa qui blanditiis quasi temporibus ullam.
-              Iusto, eum!'>Hubungi Kami</TitleSection>
+            <TitleSection
+              direction="center-to-left"
+              color="primary"
+              desc="Contact Us"
+              text="Sudah yakin dengan Clean'n Fresh? Silahkan langsung hubungi admin kami melewati WhatsApp. Kami akan selalu siap membantu."
+            >
+              Hubungi Kami
+            </TitleSection>
           </span>
           <span className="grid max-sm:mx-auto sm:grid-cols-2 mt-4">
             <Sosmed
@@ -36,7 +40,7 @@ const ContactUs = () => {
             Area Kami
           </h5>
           <h1 className="absolute z-[1] font-bold w-full text-center top-[50%] translate-y-[-50%] left-0 bg-primary-medium text-white text-xl sm:text-4xl">
-            JADETABEK & Medan
+            JADETABEK
           </h1>
           <img
             className="w-[70%] max-h-[300px] object-contain brightness-[115%]"
@@ -48,6 +52,5 @@ const ContactUs = () => {
     </div>
   )
 }
-
 
 export default ContactUs

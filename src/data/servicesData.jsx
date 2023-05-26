@@ -17,14 +17,15 @@ import { BsFillBoxSeamFill } from 'react-icons/bs'
 import { BsPersonCheckFill } from 'react-icons/bs'
 import { FaCouch } from 'react-icons/fa'
 import { AiFillCar } from 'react-icons/ai'
-import { FaWhatsapp } from 'react-icons/fa'
+import { MdCleaningServices } from 'react-icons/md'
 import WhatsAppButton from '../components/WhatsAppButton'
 
-
-const UL_STYLE = 'flex flex-col gap-2 mt-3 mb-2'
-const LIST_STYLE = 'flex items-center gap-2 border-b-2 border-slate-100 pb-3'
+const UL_STYLE = 'flex flex-col gap-2 mt-1 mb-2'
+const LIST_STYLE = 'flex items-center gap-2 border-b-2 border-slate-100 pb-3 pt-2'
+const LIST_STYLE_ITEMS_START = 'flex items-start gap-2 border-b-2 border-slate-100 pb-3 pt-2'
 const ICON_STYLE = 'text-[30px] text-primary-medium flex-[1]'
-const TEXT_STYLE = 'text-sm lg:text-base text-slate-600 flex-[10]'
+const h1_STYLE = 'text-[11px] sm:text-sm lg:text-base text-slate-600 flex-[10]'
+const IMPORTANT_TEXT = 'text-primary-darkest font-[500]'
 
 const services = [
   {
@@ -36,22 +37,22 @@ const services = [
         <ul className={UL_STYLE}>
           <li className={LIST_STYLE}>
             <div className={`${ICON_STYLE} flex justify-center`}>
-              <div className='relative max-w-max'>
+              <div className="relative max-w-max">
                 <AiOutlineStop />
                 <VscBug
                   className={`text-primary-medium text-[20px] absolute-xy-center`}
                 />
               </div>
             </div>
-            <h1 className={TEXT_STYLE}>Memberantas kutu tungau secara total</h1>
+            <h1 className={h1_STYLE}>Memberantas kutu tungau secara total</h1>
           </li>
           <li className={LIST_STYLE}>
             <BiBed className={ICON_STYLE} />
-            <h1 className={TEXT_STYLE}>
+            <h1 className={h1_STYLE}>
               Membersihkan kasur serta perabotan dari debu dan kotoran
             </h1>
           </li>
-          <WhatsAppButton/>
+          <WhatsAppButton />
         </ul>
       </div>
     ),
@@ -64,37 +65,36 @@ const services = [
       <div>
         <ul className={UL_STYLE}>
           <li className={LIST_STYLE}>
-          <div className={`${ICON_STYLE} flex justify-center`}>
-              <div className='relative max-w-max'>
+            <div className={`${ICON_STYLE} flex justify-center`}>
+              <div className="relative max-w-max">
                 <AiOutlineStop />
                 <VscBug
                   className={`text-primary-medium text-[20px] absolute-xy-center`}
                 />
               </div>
             </div>
-            <h1 className={TEXT_STYLE}>Memberantas kutu tungau secara total</h1>
+            <h1 className={h1_STYLE}>Memberantas kutu tungau secara total</h1>
           </li>
           <li className={LIST_STYLE}>
             <BiBed className={ICON_STYLE} />
-            <h1 className={TEXT_STYLE}>
+            <h1 className={h1_STYLE}>
               Membersihkan kasur serta perabotan dari debu dan kotoran
             </h1>
           </li>
           <li className={LIST_STYLE}>
             <HiOutlineSparkles className={ICON_STYLE} />
-            <h1 className={TEXT_STYLE}>
+            <h1 className={h1_STYLE}>
               Mencuci kasur serta perabotan sehingga menjadi seperti baru
             </h1>
           </li>
           <li className={LIST_STYLE}>
             <IoMdFlower className={ICON_STYLE} />
-            <h1 className={TEXT_STYLE}>
+            <h1 className={h1_STYLE}>
               Mengharumkan kasur serta perabotan dari batu tidak sedap
             </h1>
           </li>
         </ul>
-        <WhatsAppButton/>
-
+        <WhatsAppButton />
       </div>
     ),
   },
@@ -107,11 +107,10 @@ const services = [
         <ul className={UL_STYLE}>
           <li className={LIST_STYLE}>
             <RiVirusFill className={ICON_STYLE} />
-            <h1 className={TEXT_STYLE}>Memberantas virus Covid-19</h1>
+            <h1 className={h1_STYLE}>Memberantas virus Covid-19</h1>
           </li>
         </ul>
-        <WhatsAppButton/>
-
+        <WhatsAppButton />
       </div>
     ),
   },
@@ -121,86 +120,82 @@ const services = [
     desc: 'Membersihkan secara keseluruhan untuk rumah, kantor, apartemen, dll.',
     fulldesc: (
       <div>
-      <ul className={UL_STYLE}>
-        <li className={LIST_STYLE}>
-          <BsFillBoxSeamFill className={ICON_STYLE} />
-          <h1 className={TEXT_STYLE}>Merapikan area agar tertata</h1>
-        </li>
-        <li className={LIST_STYLE}>
+        <ul className={UL_STYLE}>
+          <li className={LIST_STYLE_ITEMS_START}>
             <HiOutlineSparkles className={ICON_STYLE} />
-            <h1 className={TEXT_STYLE}>
-              Membersihkan area dari debu dan kotoran
-            </h1>
-          </li>
-        <li className={LIST_STYLE}>
-            <BsPersonCheckFill className={ICON_STYLE} />
-            <h1 className={TEXT_STYLE}>
-              Siap untuk menerima arahan kebersihan dari pemesan jasa
-            </h1>
-          </li>
-        <li className={LIST_STYLE}>
-            <FaCouch className={ICON_STYLE} />
-            <h1 className={TEXT_STYLE}>
-              membersihkan perabotan seperti sofa, karpet, dari debu dan kotoran
-            </h1>
-          </li>
-      </ul>
-      <WhatsAppButton/>
+            <div className={`${h1_STYLE}`}>
+              <span className={IMPORTANT_TEXT}>
+              Membersihkan area secara menyeluruh, meliputi:
 
-    </div>
-    )
+              </span>
+              <p className='text-slate-500'>
+                jendela, kaca, partisi, kasur, tatakan kasur, sofa, karpet, balkon, toilet, kitchen-set, lemari (luar & dalam), lantai (vakum & pel)
+                </p>
+            </div>
+          </li>
+          <li className={LIST_STYLE}>
+            <MdCleaningServices className={ICON_STYLE} />
+            <h1 className={h1_STYLE}>
+              Perabotan yang berpotensi dihuni oleh tungau akan di <span className={IMPORTANT_TEXT}>vacuum menggunakan mesin hydro cleaner dilengkapi dengan obat anti kuman</span>. Perabotan lain akan kami <span className={IMPORTANT_TEXT}>lap dan sikat dengan cairan pembersih</span>. 
+            </h1>
+          </li>
+          <li className={LIST_STYLE}>
+            <RiVirusFill className={ICON_STYLE} />
+            <h1 className={h1_STYLE}>
+              Sudah termasuk semprot disinfektan di seluruh ruangan
+            </h1>
+          </li>
+        </ul>
+        <WhatsAppButton />
+      </div>
+    ),
   },
   {
     image: mobil_1,
     title: 'Cleaning Mobil',
     desc: 'Membersihkan mobil dari debu, noda, dan bau tidak sedap.',
-    fulldesc:
-      (
-        <div>
+    fulldesc: (
+      <div>
         <ul className={UL_STYLE}>
-        <li className={LIST_STYLE}>
-
-        <div className={`${ICON_STYLE} flex justify-center`}>
-              <div className='relative max-w-max'>
+          <li className={LIST_STYLE}>
+            <div className={`${ICON_STYLE} flex justify-center`}>
+              <div className="relative max-w-max">
                 <AiOutlineStop />
                 <VscBug
                   className={`text-primary-medium text-[20px] absolute-xy-center`}
                 />
               </div>
             </div>
-            <h1 className={TEXT_STYLE}>
-                Memberantas tungau dari interior mobil
-              </h1>
-            </li>
+            <h1 className={h1_STYLE}>
+              Memberantas tungau dari interior mobil
+            </h1>
+          </li>
           <li className={LIST_STYLE}>
-              <HiOutlineSparkles className={ICON_STYLE} />
-              <h1 className={TEXT_STYLE}>
-                Membersihkan mobil dari debu dan kotoran
-              </h1>
-            </li>
+            <HiOutlineSparkles className={ICON_STYLE} />
+            <h1 className={h1_STYLE}>
+              Membersihkan mobil dari debu dan kotoran
+            </h1>
+          </li>
           <li className={LIST_STYLE}>
-              <BsPersonCheckFill className={ICON_STYLE} />
-              <h1 className={TEXT_STYLE}>
-                Siap untuk menerima arahan kebersihan dari pemesan jasa
-              </h1>
-            </li>
+            <BsPersonCheckFill className={ICON_STYLE} />
+            <h1 className={h1_STYLE}>
+              Memiliki standar pembersihan yang profesional
+            </h1>
+          </li>
           <li className={LIST_STYLE}>
-              <AiFillCar className={ICON_STYLE} />
-              <h1 className={TEXT_STYLE}>
-                Mobil menjadi bersih seperti baru
-              </h1>
-            </li>
-            <li className={LIST_STYLE}>
+            <AiFillCar className={ICON_STYLE} />
+            <h1 className={h1_STYLE}>Mobil menjadi bersih seperti baru</h1>
+          </li>
+          <li className={LIST_STYLE}>
             <IoMdFlower className={ICON_STYLE} />
-            <h1 className={TEXT_STYLE}>
-              Mengharumkan mobil dari batu tidak sedap
+            <h1 className={h1_STYLE}>
+              Mengharumkan mobil dari bau tidak sedap
             </h1>
           </li>
         </ul>
-        <WhatsAppButton/>
-
+        <WhatsAppButton />
       </div>
-      )
+    ),
   },
 ]
 
