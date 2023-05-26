@@ -5,7 +5,7 @@ import cleaning3 from '../../assets/carousel/cleaning3good.png'
 import BubbleChartIcon from '@mui/icons-material/BubbleChart'
 import MyButton from '../../components/MyButton'
 
-const HomeCarousel = () => {
+const HomeCarousel = ({zIndex}) => {
   const slides = [cleaning1, cleaning2, cleaning3]
 
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -23,8 +23,8 @@ const HomeCarousel = () => {
   }, [currentIndex])
 
   return (
-    <div className="w-full h-[80vh] sm:h-[65vh] relative bg-primary-medium overflow-hidden">
-      <main className="max-w-[1240px] relative top-[45%] translate-y-[-50%] mx-auto z-[4] ">
+    <div className={`w-full h-[500px] md:h-[650px] bg-primary-medium overflow-hidden absolute ${zIndex}`}>
+      {/* <main className="max-w-[1240px] relative top-[45%] translate-y-[-50%] mx-auto z-[4] ">
         <div className="text-white relative px-4 w-[85%] md:w-[70%] xl:w-[60%] ">
           <div className="relative z-[4] flex flex-col items-start">
             <p className='font-[200]'>Clean The Unseen</p>
@@ -39,7 +39,7 @@ const HomeCarousel = () => {
             <BubbleChartIcon style={{fontSize:'600px'}} className='  text-primary-light/20'/>
           </div>
         </div>
-      </main>
+      </main> */}
 
       {/* skew */}
       <div className="skewed skewed-left"></div>

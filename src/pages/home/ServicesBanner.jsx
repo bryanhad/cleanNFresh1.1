@@ -25,8 +25,8 @@ const ServicesBanner = () => {
   }
 
   return (
-    <div className="w-full px-6">
-      <div className="max-w-[1240px] translate-y-[-65px] mx-auto relative z-[5] flex flex-col lg:flex-row lg:justify-between gap-4">
+    <div className="w-full px-6 pt-14">
+      <div className="max-w-[1240px] mx-auto relative z-[5] flex flex-col lg:flex-row lg:justify-between gap-4">
         {servicesArr.map(service => (
           <ServiceCard
             key={service.title}
@@ -38,7 +38,7 @@ const ServicesBanner = () => {
         ))}
 
       </div>
-      <div className="max-w-[1240px] mx-auto flex justify-center translate-y-[-35px]">
+      <div className="max-w-[1240px] mx-auto flex justify-center py-6">
         <MyButton to="layanan" size="button-big">
           Lihat Semua Jasa Kami
         </MyButton>
