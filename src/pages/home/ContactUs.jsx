@@ -1,4 +1,4 @@
-import mapImg from '../../assets/photos/jabodetabek.png'
+import mapImg from '../../assets/photos/jadetabek.png'
 import Sosmed from '../../components/Sosmed'
 import TitleSection from '../../components/TitleSection'
 

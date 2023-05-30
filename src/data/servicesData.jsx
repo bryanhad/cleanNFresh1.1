@@ -1,4 +1,4 @@
-import vacuumOnly_1 from '../assets/photos/vacuumOnlyGood.png'
+import vacuumOnly_1 from '../assets/photos/vacuumOnlyMaybe.png'
 import vacuumCuci from '../assets/photos/vacuumCuciGood-v2.png'
 import fogging from '../assets/photos/foggingGood.png'
 import general_1 from '../assets/photos/generalCleaning2.jpg'
@@ -167,7 +167,7 @@ const services = [
               </div>
             </div>
             <h1 className={h1_STYLE}>
-              Memberantas tungau dari interior mobil
+              Memberantas tungau dari jok mobil
             </h1>
           </li>
           <li className={LIST_STYLE}>
